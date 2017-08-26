@@ -9,4 +9,8 @@ const styles = {
   },
 };
 
-export default glamorous.div(styles);
+const Col = glamorous.div(styles);
+
+Col.propsAreCssOverrides = true;
+
+export default Col;

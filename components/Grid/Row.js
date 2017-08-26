@@ -9,4 +9,8 @@ export const styles = {
   },
 };
 
-export default glamorous.div(styles);
+const Row = glamorous.div(styles);
+
+Row.propsAreCssOverrides = true;
+
+export default Row;

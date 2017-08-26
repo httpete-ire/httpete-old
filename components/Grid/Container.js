@@ -1,7 +1,7 @@
 import glamorous from 'glamorous';
 
 const styles = {
-  maxWidth: '1200px',
+  maxWidth: '1100px',
   margin: '0 auto',
 };
 

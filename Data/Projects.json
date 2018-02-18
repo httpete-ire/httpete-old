@@ -5,5 +5,12 @@
     "mainImage": "/static/desk.jpg",
     "mainDesc":
       "An online documentation platform for creating, managing and sharing docs. Formatted documentation is easily written using an online text editor and Markdown."
+  },
+  {
+    "id": "pomodoro",
+    "title": "Pomodoro",
+    "mainImage": "/static/desk.jpg",
+    "mainDesc":
+      "A pomodoro timer built using React/Redux, ES2015 and web workers. The Pomodoro Technique is a time management method for breaking tasks into focused time blocks seperated by a break."
   }
 ]

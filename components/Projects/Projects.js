@@ -8,23 +8,29 @@ export default ({ projects }) => {
       {projects.map((project, index) => (
         <Section marginBottom={projects.length - 1 === index ? 0 : 100}>
           <Row>
-            {index % 2 === 0 ? (
-              [
-                <ProjectImage image={project.mainImage} rightAligned={false} />,
-                <ProjectDesc
-                  title={project.title}
-                  mainDesc={project.mainDesc}
-                />,
-              ]
-            ) : (
-              [
-                <ProjectDesc
-                  title={project.title}
-                  mainDesc={project.mainDesc}
-                />,
-                <ProjectImage image={project.mainImage} rightAligned={true} />,
-              ]
-            )}
+            {index % 2 === 0
+              ? [
+                  <ProjectImage
+                    image={project.mainImage}
+                    rightAligned={false}
+                  />,
+                  <ProjectDesc
+                    title={project.title}
+                    mainDesc={project.mainDesc}
+                    push
+                  />,
+                ]
+              : [
+                  <ProjectDesc
+                    title={project.title}
+                    mainDesc={project.mainDesc}
+                    push={false}
+                  />,
+                  <ProjectImage
+                    image={project.mainImage}
+                    rightAligned={true}
+                  />,
+                ]}
           </Row>
         </Section>
       ))}

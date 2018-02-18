@@ -10,15 +10,16 @@ const styles = {
 };
 
 const Col = glamorous.div(styles, props => {
-  console.log(props.browserSwap);
-
   let styles = [];
 
   if (props.browser) {
     styles.push({
-      marginLeft: '-212',
-      [mediaQueries.medium]: {
-        marginLeft: '0',
+      marginLeft: '-214px',
+      [mediaQueries.xlarge]: {
+        marginLeft: '-107px',
+      },
+      [mediaQueries.large]: {
+        marginLeft: 0,
       },
     });
   }

@@ -15,8 +15,6 @@ import Footer from './../layout/Footer';
 
 import { projects, projectsById } from './../Data/';
 
-console.log(projectsById);
-
 // Adds server generated styles to glamor cache.
 // Has to run before any `style()` calls
 // '__NEXT_DATA__.ids' is set in '_document.js'

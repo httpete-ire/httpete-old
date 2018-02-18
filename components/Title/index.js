@@ -1,6 +1,7 @@
 import glamorous from 'glamorous';
 import { Row, Col } from './../Grid/';
 import InView from './../InView/';
+import { mediaQueries } from './../../config';
 
 const Title = glamorous.h4({
   display: 'inline-block',
@@ -19,17 +20,35 @@ const margin = 214;
 
 Title.propsAreCssOverrides = true;
 
-export default ({ children, swap, inViewColor = '#333' }) =>
+const TitleRow = glamorous.div(
+  {
+    display: 'flex',
+    width: '100%',
+    [mediaQueries.small]: {
+      flexDirection: 'column',
+    },
+  },
+  ({ swap }) => ({
+    marginLeft: !swap ? '-214px' : '214px',
+    [mediaQueries.xlarge]: {
+      marginLeft: !swap ? '-107px' : '107px',
+    },
+    [mediaQueries.large]: {
+      marginLeft: 0,
+    },
+  })
+);
+
+export default ({ children, swap, inViewColor = '#333' }) => (
   <InView>
     {({ isInView }) => {
       return (
-        <Row marginLeft={swap ? margin : -margin}>
+        <TitleRow swap={swap}>
           <Col textAlign={swap ? 'right' : 'left'}>
-            <Title color={isInView ? inViewColor : '#ddd'}>
-              {children}
-            </Title>
+            <Title color={isInView ? inViewColor : '#ddd'}>{children}</Title>
           </Col>
-        </Row>
+        </TitleRow>
       );
     }}
-  </InView>;
+  </InView>
+);

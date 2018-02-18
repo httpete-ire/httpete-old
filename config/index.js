@@ -1,6 +1,6 @@
 const sizes = {
   small: '600px',
-  medium: '992px',
+  medium: '1000px',
   large: '1200px',
   xlarge: '1390px',
 };

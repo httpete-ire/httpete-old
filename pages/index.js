@@ -38,7 +38,6 @@ export default () => (
       <Container backgroundColor="#ffffff">
         <Content>
           <Section marginBottom="74">
-            <h1>Coming soon...</h1>
             <Title inViewColor="#ddd">About</Title>
             <Row>
               <Col flex="3">

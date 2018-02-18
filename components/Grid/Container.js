@@ -5,4 +5,8 @@ const styles = {
   margin: '0 auto',
 };
 
-export default glamorous.div(styles);
+const Container = glamorous.div(styles);
+
+Container.propsAreCssOverrides = true;
+
+export default Container;

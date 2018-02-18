@@ -23,7 +23,6 @@ export default class MyDocument extends Document {
   }
 
   componentDidMount() {
-    console.log('mount');
     this.setState({
       loaded: true,
     });
@@ -33,6 +32,8 @@ export default class MyDocument extends Document {
     css.global('a', { 'text-decoration': 'none', color: '#fff' });
 
     css.global('*, *:before, *:after', { boxSizing: 'border-box' });
+
+    css.global('img', { maxWidth: '100%' });
 
     const family = css.fontFace({
       fontFamily: 'atcharris-regular',
@@ -46,10 +47,11 @@ export default class MyDocument extends Document {
       <html>
         <Head>
           <style dangerouslySetInnerHTML={{ __html: this.props.css }} />
+          <meta name="viewport" content="width=device-width" />
         </Head>
         <body
           className={this.state.loaded ? 'loaded' : ''}
-          style={{ fontFamily: family }}
+          style={{ fontFamily: family, background: '#fafafa' }}
         >
           <Main />
           <NextScript />

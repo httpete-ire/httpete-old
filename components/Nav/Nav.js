@@ -15,14 +15,14 @@ const MainNav = glamorous.ul({
 
 MainNav.propsAreCssOverrides = true;
 
-export default () =>
+export default () => (
   <Nav>
     <MainNav color="#fff">
       <li class="main-nav__item">
         <Logo />
       </li>
 
-      <li class="main-nav__item main-nav__sub-nav">
+      {/*<li class="main-nav__item main-nav__sub-nav">
         <MainNav width="130px">
           <DropdownContainer>
             <h4>Work</h4>
@@ -50,6 +50,7 @@ export default () =>
             </h4>
           </li>
         </MainNav>
-      </li>
+</li>*/}
     </MainNav>
-  </Nav>;
+  </Nav>
+);

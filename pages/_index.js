@@ -7,6 +7,8 @@ import Logo from './../components/Nav/Logo';
 import Title from './../components/Title/';
 import Browser from './../components/Browser';
 import Projects from './../components/Projects';
+import ComingSoon from './../components/ComingSoon';
+
 import Layout from './../layout/';
 import Wrapper from './../layout/Wrapper';
 import Content from './../layout/Content';
@@ -14,8 +16,6 @@ import Section from './../layout/Section';
 import Footer from './../layout/Footer';
 
 import { projects, projectsById } from './../Data/';
-
-console.log(projectsById);
 
 // Adds server generated styles to glamor cache.
 // Has to run before any `style()` calls
@@ -37,32 +37,8 @@ export default () => (
     <Wrapper>
       <Container backgroundColor="#ffffff">
         <Content>
-          <Section marginBottom="74">
-            <h1>Coming soon...</h1>
-            <Title inViewColor="#ddd">About</Title>
-            <Row>
-              <Col flex="3">
-                <p>About content</p>
-              </Col>
-              <Col>
-                <p>Details</p>
-              </Col>
-            </Row>
-          </Section>
-
-          <Section>
-            <Title swap>Skills</Title>
-            <Row>
-              <WrappedRow />
-              <WrappedRow>
-                <p>SVG icon</p>
-              </WrappedRow>
-            </Row>
-          </Section>
-
-          <Section marginBottom={0}>
-            <Title>Work</Title>
-            <Projects projects={projects} />
+          <Section marginBottom="0">
+            <ComingSoon />
           </Section>
         </Content>
       </Container>

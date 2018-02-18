@@ -19,13 +19,13 @@ const margin = 214;
 
 Title.propsAreCssOverrides = true;
 
-export default ({ children, swap }) =>
+export default ({ children, swap, inViewColor = '#333' }) =>
   <InView>
     {({ isInView }) => {
       return (
         <Row marginLeft={swap ? margin : -margin}>
           <Col textAlign={swap ? 'right' : 'left'}>
-            <Title color={isInView ? 'red' : 'green'}>
+            <Title color={isInView ? inViewColor : '#ddd'}>
               {children}
             </Title>
           </Col>

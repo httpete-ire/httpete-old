@@ -11,6 +11,7 @@ const MainNav = glamorous.ul({
   display: 'flex',
   justifyContent: 'space-between',
   listStyle: 'none',
+  padding: 0,
 });
 
 MainNav.propsAreCssOverrides = true;

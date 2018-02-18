@@ -14,9 +14,9 @@ const Col = glamorous.div(styles, props => {
 
   if (props.browser) {
     styles.push({
-      marginLeft: '-214px',
+      marginLeft: '-214',
       [mediaQueries.xlarge]: {
-        marginLeft: '-107px',
+        marginLeft: '-107',
       },
       [mediaQueries.large]: {
         marginLeft: 0,
@@ -26,10 +26,12 @@ const Col = glamorous.div(styles, props => {
 
   if (props.browserSwap) {
     styles.push({
-      marginRight: '-212',
-      marginLeft: '0',
-      [mediaQueries.medium]: {
-        marginRight: '0',
+      marginRight: '-214',
+      [mediaQueries.xlarge]: {
+        marginRight: '-107',
+      },
+      [mediaQueries.large]: {
+        marginRight: 0,
       },
     });
   }

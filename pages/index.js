@@ -8,6 +8,7 @@ import Title from './../components/Title/';
 import Browser from './../components/Browser';
 import Projects from './../components/Projects';
 import Svg from './../components/Svg';
+import ContactDetails from './../components/ContactDetails';
 
 import Layout from './../layout/';
 import Wrapper from './../layout/Wrapper';
@@ -46,7 +47,7 @@ export default () => (
                 <p>About content</p>
               </Col>
               <Col>
-                <p>Details</p>
+                <ContactDetails />
               </Col>
             </Row>
           </Section>

@@ -19,7 +19,7 @@ MainNav.propsAreCssOverrides = true;
 export default () => (
   <Nav>
     <MainNav color="#fff">
-      <li class="main-nav__item">
+      <li className="main-nav__item">
         <Logo />
       </li>
 

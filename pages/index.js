@@ -7,11 +7,15 @@ import Logo from './../components/Nav/Logo';
 import Title from './../components/Title/';
 import Browser from './../components/Browser';
 import Projects from './../components/Projects';
+import Svg from './../components/Svg';
+
 import Layout from './../layout/';
 import Wrapper from './../layout/Wrapper';
 import Content from './../layout/Content';
 import Section from './../layout/Section';
 import Footer from './../layout/Footer';
+
+import { js, ts } from './../icons/';
 
 import { projects, projectsById } from './../Data/';
 
@@ -50,9 +54,15 @@ export default () => (
           <Section>
             <Title swap>Skills</Title>
             <Row>
-              <WrappedRow />
               <WrappedRow>
-                <p>SVG icon</p>
+                <Svg markup={js} />
+                <Svg markup={ts} />
+                <Svg markup={js} />
+                <Svg markup={js} />
+                <Svg markup={js} />
+                <Svg markup={js} />
+                <Svg markup={js} />
+                <Svg markup={js} />
               </WrappedRow>
             </Row>
           </Section>

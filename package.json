@@ -22,9 +22,9 @@
   "dependencies": {
     "glamor": "^2.20.39",
     "glamorous": "^4.1.0",
-    "next": "^3.0.3",
-    "react": "^15.6.1",
-    "react-dom": "^15.6.1"
+    "next": "^5.0.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
   },
   "devDependencies": {
     "raw-loader": "^0.5.1",

@@ -2,6 +2,7 @@ import glamorous from 'glamorous';
 import Link from 'next/link';
 import Logo from './Logo';
 import Dropdown, { DropdownItem, DropdownContainer } from './Dropdown';
+import { mediaQueries } from './../../config';
 
 const Nav = glamorous.nav({
   width: '100%',
@@ -12,6 +13,9 @@ const MainNav = glamorous.ul({
   justifyContent: 'space-between',
   listStyle: 'none',
   padding: 0,
+  [mediaQueries.small]: {
+    padding: '0 30px',
+  },
 });
 
 MainNav.propsAreCssOverrides = true;

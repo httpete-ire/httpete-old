@@ -31,7 +31,11 @@ export default class MyDocument extends Document {
   render() {
     css.global('a', { 'text-decoration': 'none', color: '#fff' });
 
-    css.global('*, *:before, *:after', { boxSizing: 'border-box' });
+    css.global('*, *:before, *:after', {
+      boxSizing: 'border-box',
+      margin: 0,
+      padding: 0,
+    });
 
     css.global('img', { maxWidth: '100%' });
 

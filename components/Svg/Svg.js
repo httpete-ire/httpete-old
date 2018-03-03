@@ -1,4 +1,5 @@
 import glamorous from 'glamorous';
+import { mediaQueries } from './../../config';
 
 const styles = {
   flex: 1,
@@ -10,6 +11,9 @@ const styles = {
     '&:hover': {
       transform: 'scale(1.2)',
     },
+  },
+  [mediaQueries.small]: {
+    marginBottom: '15px',
   },
 };
 

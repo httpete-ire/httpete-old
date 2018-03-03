@@ -1,8 +1,12 @@
 import glamorous from 'glamorous';
+import { mediaQueries } from './../../config';
 
 const ContactList = glamorous.ul({
   listStyle: 'none',
   margin: 0,
+  [mediaQueries.small]: {
+    padding: 0,
+  },
 });
 
 const ContactItem = glamorous.li({
@@ -16,6 +20,9 @@ const ContactLink = glamorous.a({
   color: '#333',
   '&:hover': {
     color: '#57CC88',
+  },
+  [mediaQueries.small]: {
+    marginLeft: 0,
   },
 });
 

@@ -14,6 +14,10 @@ const Title = glamorous.h4({
   fontSize: '1.414em',
   lineHeight: 1.2,
   transition: 'all 1.5s',
+  [mediaQueries.small]: {
+    width: '100%',
+    textAlign: 'left',
+  },
 });
 
 const margin = 214;

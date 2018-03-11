@@ -1,9 +1,26 @@
+import glamorous from 'glamorous';
 import BrowserHeader from './BrowserHeader';
 import BrowserBody from './BrowserBody';
 
-export default ({ image }) => (
-  <div>
-    <BrowserHeader />
-    <BrowserBody image={image} />
-  </div>
-);
+const styles = {
+  marginTop: 0,
+  transition: 'margin-top 1.5s cubic-bezier(0.62, 0.07, 0.36, 1)',
+  '.loaded &': {
+    marginTop: '-15vh',
+  },
+};
+
+const MainBrowser = glamorous.div(styles);
+
+export default ({ image, main = false }) =>
+  main ? (
+    <MainBrowser>
+      <BrowserHeader />
+      <BrowserBody image={image} />
+    </MainBrowser>
+  ) : (
+    <div>
+      <BrowserHeader />
+      <BrowserBody image={image} />
+    </div>
+  );

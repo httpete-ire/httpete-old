@@ -2,4 +2,9 @@
 import js from './js.svg';
 import ts from './ts.svg';
 
-export { js, ts };
+const iconMap = {
+  js,
+  ts,
+};
+
+export { js, ts, iconMap };

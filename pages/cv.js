@@ -5,11 +5,10 @@ import Header from './../components/Header/';
 import Nav from './../components/Nav/';
 import Logo from './../components/Nav/Logo';
 import Title from './../components/Title/';
-import Browser from './../components/Browser';
-import Projects from './../components/Projects';
 import Svg from './../components/Svg';
 import ContactDetails from './../components/ContactDetails';
 import Education from './../components/Education';
+import Experience from '../components/Experience';
 
 import Layout from './../layout/';
 import Wrapper from './../layout/Wrapper';
@@ -19,7 +18,7 @@ import Footer from './../layout/Footer';
 
 import { js, ts } from './../icons/';
 
-import { projects, projectsById } from './../Data/';
+import { jobs } from './../Data/';
 
 // Adds server generated styles to glamor cache.
 // Has to run before any `style()` calls
@@ -94,18 +93,15 @@ export default () => (
 
           <Section marginBottom="0">
             <Title inViewColor="#ddd">Experience</Title>
-            <Row>
-              <Col>Justgiving</Col>
-            </Row>
-            <Row>
-              <Col>Justgiving</Col>
-            </Row>
-            <Row>
-              <Col>Justgiving</Col>
-            </Row>
-            <Row>
-              <Col>Justgiving</Col>
-            </Row>
+
+            {jobs.map((job, index) => (
+              <Experience
+                key={job.id}
+                job={job}
+                first={index === 0}
+                last={index === jobs.length - 1}
+              />
+            ))}
           </Section>
         </Content>
       </Container>

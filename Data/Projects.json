@@ -2,37 +2,57 @@
   {
     "id": "dochub",
     "title": "Dochub",
-    "mainImage": "/static/desk.jpg",
-    "sourceCodeLink": "#",
+    "mainImage": "/static/dochub/editor-page.jpg",
+    "sourceCodeLink": "https://github.com/httpete-ire/dochub",
     "mainDesc":
-      "An online documentation platform for creating, managing and sharing docs. Formatted documentation is easily written using an online text editor and Markdown.",
-    "technologies": ["js", "ts"],
+      "An online documentation platform for creating, managing and sharing docs. Formatted documentation is easily written using an online text editor and Markdown. Readers can suggest changes by making pull requests which the author can merge.",
+    "sideDesc":
+      "The main objective of the project was to research compiler design principles and develop a Markdown compiler with an associated web application. Full research was carried out to identify the key phases needed for a Markdown compiler, Lexical analysis, Syntax analysis and Code generation.\n\n The web application was split into two independent components, a REST API and a singe page application. The REST API is responsible for providing access to the data through a set of URLs, the API was developed using Node.js and MongoDB. The single page application which was built using Angular,it is responsible for displaying data in the user interface and handling user interactions.",
+    "technologies": ["nodejs", "js", "mongodb", "angular", "webpack", "sass"],
     "screens": [
       {
-        "title": "tasks",
-        "mainImage": "/static/desk.jpg",
+        "title": "Pull request",
+        "mainImage": "/static/dochub/pull-request-page.jpg",
         "mainDesc":
-          "The task list manages a list of things a user must do within a pomodoro. When a pomodoro is complete, all completed tasks will be automatcially cleared. Allowing the user to concentrate on what to do next."
+          "Readers can suggest changes without the need for an account by making a pull request. The author is notified of these changes and can either close or merge the request."
       },
       {
-        "title": "tasks",
-        "mainImage": "/static/desk.jpg",
+        "title": "Published document",
+        "mainImage": "/static/dochub/published-document.jpg",
         "mainDesc":
-          "The task list manages a list of things a user must do within a pomodoro. When a pomodoro is complete, all completed tasks will be automatcially cleared. Allowing the user to concentrate on what to do next."
+          "Documentation can easily be shared and viewed using a short URL. The published document is automatically updated when a change is made to the documentation."
+      },
+      {
+        "title": "Version control",
+        "mainImage": "/static/dochub/version-control.jpg",
+        "mainDesc":
+          "Previous versions of documentation are stored, allowing the author to revert any mistakes. The author can select what changes to revert using the merge tool."
       }
     ]
   },
   {
-    "id": "pomodoro",
-    "title": "Pomodoro",
-    "mainImage": "/static/desk.jpg",
+    "id": "timedo",
+    "title": "Timedo",
+    "mainImage": "/static/timedo/main-image.jpg",
     "mainDesc":
-      "A pomodoro timer built using React/Redux, ES2015 and web workers. The Pomodoro Technique is a time management method for breaking tasks into focused time blocks seperated by a break.",
+      "The application allows users to manage their time using a pomodoro timer. Users can keep track of things to do using a todo list. The Pomodoro Technique is a time management method for breaking tasks into focused time blocks separated by a short break.",
+    "sideDesc":
+      "When a tab is inactive in chrome, chrome will slow down the execution of timer functions. This isnt ideal for a time tracking app. One solution I found was to use the Web Workers API which is supported in most modern browsers. As Web Workers are executed in a seperate thread, timer functions execute as normal.",
+    "sourceCodeLink": "https://github.com/httpete-ire/timedo",
+    "applicationLink": "https://timedo-rhqopfwgwd.now.sh/",
+    "technologies": ["js", "react", "redux", "webpack", "sass", "babel"],
     "screens": [
       {
-        "title": "tasks",
-        "mainImage": "/static/desk.jpg",
-        "mainDesc": "Example place"
+        "title": "Tasks",
+        "mainImage": "/static/timedo/active-small.jpg",
+        "mainDesc":
+          "The task list manages a list of things a user must do within a pomodoro. When a pomodoro is complete, all completed tasks will be automatcially cleared. Allowing the user to concentrate on what to do next."
+      },
+      {
+        "title": "Settings",
+        "mainImage": "/static/timedo/break-small.jpg",
+        "mainDesc":
+          "The user can set the time for the three types of timers: active, short break and long break. By enabling desktop notifactions, the browsers notifcation API will inform the user when a timer is up."
       }
     ]
   }

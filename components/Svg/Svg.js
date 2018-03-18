@@ -7,6 +7,7 @@ const styles = {
   textAlign: 'center',
   '& svg': {
     height: 58,
+    width: 82,
     transition: 'all 0.5s ease',
     '&:hover': {
       transform: 'scale(1.2)',

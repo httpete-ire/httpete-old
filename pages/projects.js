@@ -21,12 +21,18 @@ import Footer from './../layout/Footer';
 import { iconMap } from './../icons/';
 
 export default class ProjectsPage extends React.Component {
-  static async getInitialProps({ query: { name } }) {
-    return { project: projectsById[name] };
+  static async getInitialProps({ query: { name }, res }) {
+    const project = projectsById[name] || null;
+    if (!project && res) res.statusCode = 404;
+    return { project };
   }
 
   render() {
     const { project } = this.props;
+
+    if (!project) {
+      return <h1>No project, show 404 page</h1>;
+    }
 
     return (
       <Layout>
@@ -56,10 +62,12 @@ export default class ProjectsPage extends React.Component {
                 <Title>Description</Title>
                 <Row>
                   <Col>
-                    <p>{project.mainDesc}</p>
+                    <p>
+                      <b>{project.mainDesc}</b>
+                    </p>
                   </Col>
                   <Col>
-                    <p>{project.mainDesc}</p>
+                    <p style={{ whiteSpace: 'pre-line' }}>{project.sideDesc}</p>
                   </Col>
                 </Row>
               </Section>

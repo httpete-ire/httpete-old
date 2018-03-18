@@ -38,6 +38,7 @@ export default class MyDocument extends Document {
     });
 
     css.global('img', { maxWidth: '100%' });
+    css.global('p', { lineHeight: '1.4' });
 
     const family = css.fontFace({
       fontFamily: 'atcharris-regular',

@@ -63,7 +63,7 @@ export default class ProjectsPage extends React.Component {
                 <Row>
                   <Col>
                     <p>
-                      <b>{project.mainDesc}</b>
+                      <b>{project.projectDesc}</b>
                     </p>
                   </Col>
                   <Col>

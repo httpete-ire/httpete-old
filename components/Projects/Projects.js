@@ -7,7 +7,7 @@ export default ({ projects, showLinks = false }) => (
   <div>
     {projects.map((project, index) => (
       <Section
-        marginBottom={projects.length - 1 === index ? 0 : 100}
+        marginBottom={projects.length - 1 === index ? 0 : 120}
         key={project.id}
       >
         <Row>

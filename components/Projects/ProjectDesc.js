@@ -2,6 +2,7 @@ import glamorous from 'glamorous';
 import { Col } from './../Grid';
 import ProjectTitle from './ProjectTitle';
 import { mediaQueries } from './../../config';
+import { DefaultButton } from './../Buttons/';
 
 const styles = {
   flex: 1,
@@ -31,9 +32,17 @@ const styleProps = props => {
 
 const Desc = glamorous.div(styles, styleProps);
 
-export default ({ title, mainDesc, push = false }) => (
+export default ({ title, mainDesc, push = false, showLink }) => (
   <Desc push={push}>
     <ProjectTitle>{title}</ProjectTitle>
     <p>{mainDesc}</p>
+    {showLink && (
+      <DefaultButton
+        margin="25px 20px 20px 0"
+        href={`/projects/${title.toLowerCase()}`}
+      >
+        Read more
+      </DefaultButton>
+    )}
   </Desc>
 );

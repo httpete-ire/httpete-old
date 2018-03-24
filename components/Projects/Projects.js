@@ -2,7 +2,8 @@ import ProjectImage from './ProjectImage';
 import ProjectDesc from './ProjectDesc';
 import Section from './../../layout/Section';
 import { Row } from './../Grid';
-export default ({ projects }) => (
+
+export default ({ projects, showLinks = false }) => (
   <div>
     {projects.map((project, index) => (
       <Section
@@ -16,6 +17,7 @@ export default ({ projects }) => (
                 <ProjectDesc
                   title={project.title}
                   mainDesc={project.mainDesc}
+                  showLink={showLinks}
                   push
                 />,
               ]
@@ -23,6 +25,7 @@ export default ({ projects }) => (
                 <ProjectDesc
                   title={project.title}
                   mainDesc={project.mainDesc}
+                  showLink={showLinks}
                   push={false}
                 />,
                 <ProjectImage image={project.mainImage} rightAligned={true} />,

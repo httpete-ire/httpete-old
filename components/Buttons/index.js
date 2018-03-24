@@ -31,4 +31,6 @@ const DefaultButton = glamorous.a({
   },
 });
 
+DefaultButton.propsAreCssOverrides = true;
+
 export { DefaultButton, OutlineButton };

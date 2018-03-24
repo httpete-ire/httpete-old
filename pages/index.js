@@ -70,7 +70,7 @@ export default () => (
 
           <Section marginBottom={0}>
             <Title>Work</Title>
-            <Projects projects={projects} />
+            <Projects projects={projects} showLinks />
           </Section>
         </Content>
       </Container>

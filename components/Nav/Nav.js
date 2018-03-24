@@ -28,14 +28,16 @@ export default () => (
         <Logo />
       </li>
 
-      <li class="main-nav__item main-nav__sub-nav">
+      <li className="main-nav__item main-nav__sub-nav">
         <MainNav width="130px">
           <DropdownContainer>
             <h4>Work</h4>
             <Dropdown className="dropdown">
               {projects.map(project => (
                 <DropdownItem key={project.id}>
-                  <Link href={`/projects/${project.id}/`}>{project.title}</Link>
+                  <Link href={`/projects/${project.id}/`}>
+                    <a>{project.title}</a>
+                  </Link>
                 </DropdownItem>
               ))}
             </Dropdown>

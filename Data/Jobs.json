@@ -1,10 +1,10 @@
 [
   {
-    "id": "ibm",
-    "company": "IBM",
-    "role": "Tester",
-    "from": "2010",
-    "to": "2015",
+    "id": "jg",
+    "company": "JustGiving",
+    "role": "Javascript engineer",
+    "from": "2016",
+    "to": "present",
     "details": "This is dummy text",
     "responsibilities": [
       "An online documentation platform for creating, managing and sharing docs. Formatted documentation is easily written using an online text editor and Markdown."
@@ -13,34 +13,42 @@
   {
     "id": "ibm",
     "company": "IBM",
-    "role": "Tester",
-    "from": "2010",
-    "to": "2015",
-    "details": "This is dummy text",
+    "role": "Front-end developer",
+    "from": "June 2015",
+    "to": "September 2015",
+    "details":
+      "Summer work placement in IBM's design studio as a front-end developer. Part of a team tasked with finding new ways to communicate IBM's Design Thinking. The project went on to win an IDI award for best Design Education and Industry project.",
     "responsibilities": [
-      "An online documentation platform for creating, managing and sharing docs. Formatted documentation is easily written using an online text editor and Markdown."
+      "exploring ways technology can be used to engage with the user",
+      "working with designers to rapidly build prototypes to validate concepts",
+      "working with the team to build a working prototype of the system we proposed which was eventually presented to the president and chief technical officer of IBM Design"
     ]
   },
   {
-    "id": "ibm",
-    "company": "IBM",
-    "role": "Tester",
-    "from": "2010",
+    "id": "software-design",
+    "company": "Software design",
+    "role": "Web developer",
+    "from": "2014",
     "to": "2015",
-    "details": "This is dummy text",
+    "details":
+      "Joined a full development team for a 5 month work placement as a web developer. As a result of my performance I was offered a part time position when college resumed.",
     "responsibilities": [
-      "An online documentation platform for creating, managing and sharing docs. Formatted documentation is easily written using an online text editor and Markdown."
+      "working as part of the development team to build commercial applications and websites",
+      "working closely with experienced designers to ensure the finished application/website met the high standards the client expected",
+      "providing client training on completion of products"
     ]
   },
   {
-    "id": "ibm",
-    "company": "IBM",
-    "role": "Tester",
-    "from": "2010",
-    "to": "2015",
+    "id": "prop-me-up",
+    "company": "Prop Me Up",
+    "role": "Front-end developer",
+    "from": "2011",
+    "to": "2014",
     "details": "This is dummy text",
     "responsibilities": [
-      "An online documentation platform for creating, managing and sharing docs. Formatted documentation is easily written using an online text editor and Markdown."
+      "designing, developing and maintaining fully functioning websites, several of these were integrated with the businesses custom backend systems",
+      "working with a backend developer to add new features to the website/backend system",
+      "working with an SEO expert to ensure the website ranked as high as possible organically"
     ]
   }
 ]

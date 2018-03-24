@@ -34,6 +34,7 @@ ExperienceRow.propsAreCssOverrides = true;
 
 const Company = glamorous.h4({
   fontSize: '1.414em',
+  marginBottom: 9,
 });
 
 const Role = glamorous.h5({

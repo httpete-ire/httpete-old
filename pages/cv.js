@@ -56,7 +56,9 @@ export default () => (
             <Title swap>Skills</Title>
             <Row>
               <WrappedRow>
-                {skills.map(skill => <Svg markup={iconMap[skill]} />)}
+                {skills.map(skill => (
+                  <Svg key={skill} markup={iconMap[skill]} />
+                ))}
               </WrappedRow>
             </Row>
           </Section>

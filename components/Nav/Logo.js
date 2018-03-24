@@ -34,11 +34,13 @@ const Dashes = glamorous.span({
 const Logo = () => {
   return (
     <Link href="/">
-      <H4>
-        http<Delimiter className="Delimiter">
-          :<Dashes>//</Dashes>
-        </Delimiter>ete
-      </H4>
+      <a href="/">
+        <H4>
+          http<Delimiter className="Delimiter">
+            :<Dashes>//</Dashes>
+          </Delimiter>ete
+        </H4>
+      </a>
     </Link>
   );
 };

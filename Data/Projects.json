@@ -1,5 +1,65 @@
 [
   {
+    "id": "smartmap",
+    "title": "Smartmap",
+    "mainImage": "/static/smartmap/smartmap.jpg",
+    "mainDesc":
+      "Lorem ipsum dolor amet vHS listicle church-key kickstarter tofu, pitchfork plaid gluten-free roof party. Scenester letterpress put a bird on it poutine gochujang.",
+    "projectDesc":
+      "Lorem ipsum dolor amet vHS listicle church-key kickstarter tofu, pitchfork plaid gluten-free roof party. Scenester letterpress put a bird on it poutine gochujang.",
+    "sideDesc":
+      "Lorem ipsum dolor amet vHS listicle church-key kickstarter tofu, pitchfork plaid gluten-free roof party. Scenester letterpress put a bird on it poutine gochujang.\n\n Lorem ipsum dolor amet vHS listicle church-key kickstarter tofu, pitchfork plaid gluten-free roof party. Scenester letterpress put a bird on it poutine gochujang.",
+    "technologies": ["ts", "nodejs", "react", "redux", "sass", "webpack"],
+    "screens": [
+      {
+        "title": "Filters",
+        "mainImage": "/static/smartmap/filter.jpg",
+        "mainDesc":
+          "Lorem ipsum dolor amet vHS listicle church-key kickstarter tofu, pitchfork plaid gluten-free roof party. Scenester letterpress put a bird on it poutine gochujang."
+      },
+      {
+        "title": "Metrics",
+        "mainImage": "/static/smartmap/metrics.jpg",
+        "mainDesc":
+          "Lorem ipsum dolor amet vHS listicle church-key kickstarter tofu, pitchfork plaid gluten-free roof party. Scenester letterpress put a bird on it poutine gochujang."
+      },
+      {
+        "title": "Beacon details",
+        "mainImage": "/static/smartmap/beacon.jpg",
+        "mainDesc":
+          "Lorem ipsum dolor amet vHS listicle church-key kickstarter tofu, pitchfork plaid gluten-free roof party. Scenester letterpress put a bird on it poutine gochujang."
+      }
+    ]
+  },
+  {
+    "id": "timedo",
+    "title": "Timedo",
+    "mainImage": "/static/timedo/main-image.jpg",
+    "mainDesc":
+      "The application allows users to manage their time using a pomodoro timer. Users can keep track of things to do using a todo list. The Pomodoro Technique is a time management method for breaking tasks into focused time blocks separated by a short break.",
+    "prjectDesc":
+      "The application allows users to manage their time using a pomodoro timer. Users can keep track of things to do using a todo list. The Pomodoro Technique is a time management method for breaking tasks into focused time blocks separated by a short break.",
+    "sideDesc":
+      "When a tab is inactive in chrome, chrome will slow down the execution of timer functions. This isnt ideal for a time tracking app. One solution I found was to use the Web Workers API which is supported in most modern browsers. As Web Workers are executed in a seperate thread, timer functions execute as normal.",
+    "sourceCodeLink": "https://github.com/httpete-ire/timedo",
+    "applicationLink": "https://timedo-rhqopfwgwd.now.sh/",
+    "technologies": ["js", "react", "redux", "webpack", "sass", "babel"],
+    "screens": [
+      {
+        "title": "Tasks",
+        "mainImage": "/static/timedo/active-small.jpg",
+        "mainDesc":
+          "The task list manages a list of things a user must do within a pomodoro. When a pomodoro is complete, all completed tasks will be automatcially cleared. Allowing the user to concentrate on what to do next."
+      },
+      {
+        "title": "Settings",
+        "mainImage": "/static/timedo/break-small.jpg",
+        "mainDesc":
+          "The user can set the time for the three types of timers: active, short break and long break. By enabling desktop notifactions, the browsers notifcation API will inform the user when a timer is up."
+      }
+    ]
+  },
+  {
     "id": "dochub",
     "title": "Dochub",
     "mainImage": "/static/dochub/editor-page.jpg",
@@ -29,34 +89,6 @@
         "mainImage": "/static/dochub/version-control.jpg",
         "mainDesc":
           "Previous versions of documentation are stored, allowing the author to revert any mistakes. The author can select what changes to revert using the merge tool."
-      }
-    ]
-  },
-  {
-    "id": "timedo",
-    "title": "Timedo",
-    "mainImage": "/static/timedo/main-image.jpg",
-    "mainDesc":
-      "The application allows users to manage their time using a pomodoro timer. Users can keep track of things to do using a todo list. The Pomodoro Technique is a time management method for breaking tasks into focused time blocks separated by a short break.",
-    "prjectDesc":
-      "The application allows users to manage their time using a pomodoro timer. Users can keep track of things to do using a todo list. The Pomodoro Technique is a time management method for breaking tasks into focused time blocks separated by a short break.",
-    "sideDesc":
-      "When a tab is inactive in chrome, chrome will slow down the execution of timer functions. This isnt ideal for a time tracking app. One solution I found was to use the Web Workers API which is supported in most modern browsers. As Web Workers are executed in a seperate thread, timer functions execute as normal.",
-    "sourceCodeLink": "https://github.com/httpete-ire/timedo",
-    "applicationLink": "https://timedo-rhqopfwgwd.now.sh/",
-    "technologies": ["js", "react", "redux", "webpack", "sass", "babel"],
-    "screens": [
-      {
-        "title": "Tasks",
-        "mainImage": "/static/timedo/active-small.jpg",
-        "mainDesc":
-          "The task list manages a list of things a user must do within a pomodoro. When a pomodoro is complete, all completed tasks will be automatcially cleared. Allowing the user to concentrate on what to do next."
-      },
-      {
-        "title": "Settings",
-        "mainImage": "/static/timedo/break-small.jpg",
-        "mainDesc":
-          "The user can set the time for the three types of timers: active, short break and long break. By enabling desktop notifactions, the browsers notifcation API will inform the user when a timer is up."
       }
     ]
   }

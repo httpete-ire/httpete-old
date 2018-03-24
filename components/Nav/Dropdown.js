@@ -1,11 +1,12 @@
 import glamorous from 'glamorous';
 
 const styles = {
-  position: 'relative',
+  position: 'absolute',
   display: 'inline-block',
   padding: '0',
   listStyle: 'none',
   display: 'none',
+  paddingTop: 10,
 };
 
 export default glamorous.ul(styles);
@@ -13,6 +14,7 @@ export default glamorous.ul(styles);
 const DropdownItem = glamorous.li({
   color: '#DDD',
   marginBottom: '8px',
+  fontSize: 14,
   '& > a': {
     color: '#DDD',
     transition: 'all 0.5s',

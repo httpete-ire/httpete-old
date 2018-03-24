@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Logo from './Logo';
 import Dropdown, { DropdownItem, DropdownContainer } from './Dropdown';
 import { mediaQueries } from './../../config';
+import { projects, projectsById } from './../../Data/';
 
 const Nav = glamorous.nav({
   width: '100%',
@@ -27,23 +28,16 @@ export default () => (
         <Logo />
       </li>
 
-      {/*<li class="main-nav__item main-nav__sub-nav">
+      <li class="main-nav__item main-nav__sub-nav">
         <MainNav width="130px">
           <DropdownContainer>
             <h4>Work</h4>
             <Dropdown className="dropdown">
-              <DropdownItem>
-                <Link href="/dochub/">Dochub</Link>
-              </DropdownItem>
-              <DropdownItem>
-                <Link href="/dochub/">Coapp</Link>
-              </DropdownItem>
-              <DropdownItem>
-                <Link href="/dochub/">IBM</Link>
-              </DropdownItem>
-              <DropdownItem>
-                <Link href="/dochub/">Pomodoro</Link>
-              </DropdownItem>
+              {projects.map(project => (
+                <DropdownItem key={project.id}>
+                  <Link href={`/projects/${project.id}/`}>{project.title}</Link>
+                </DropdownItem>
+              ))}
             </Dropdown>
           </DropdownContainer>
 
@@ -55,7 +49,7 @@ export default () => (
             </h4>
           </li>
         </MainNav>
-</li>*/}
+      </li>
     </MainNav>
   </Nav>
 );

@@ -16,9 +16,9 @@ import Content from './../layout/Content';
 import Section from './../layout/Section';
 import Footer from './../layout/Footer';
 
-import { js, ts } from './../icons/';
+import { iconMap } from './../icons/';
 
-import { projects, projectsById } from './../Data/';
+import { projects, projectsById, skills } from './../Data/';
 
 // Adds server generated styles to glamor cache.
 // Has to run before any `style()` calls
@@ -56,14 +56,7 @@ export default () => (
             <Title swap>Skills</Title>
             <Row>
               <WrappedRow>
-                <Svg markup={js} />
-                <Svg markup={ts} />
-                <Svg markup={js} />
-                <Svg markup={js} />
-                <Svg markup={js} />
-                <Svg markup={js} />
-                <Svg markup={js} />
-                <Svg markup={js} />
+                {skills.map(skill => <Svg markup={iconMap[skill]} />)}
               </WrappedRow>
             </Row>
           </Section>

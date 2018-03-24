@@ -9,6 +9,8 @@ import nodejs from './nodejs.svg';
 import babel from './babel.svg';
 import mongodb from './mongodb.svg';
 import angular from './angular.svg';
+import git from './git.svg';
+import html from './html.svg';
 
 const iconMap = {
   js,
@@ -21,6 +23,8 @@ const iconMap = {
   babel,
   mongodb,
   angular,
+  git,
+  html,
 };
 
 export {
@@ -34,5 +38,7 @@ export {
   babel,
   mongodb,
   angular,
+  git,
+  html,
   iconMap,
 };

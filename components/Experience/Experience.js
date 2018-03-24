@@ -32,24 +32,66 @@ const ExperienceRow = glamorous.div(
 
 ExperienceRow.propsAreCssOverrides = true;
 
+const Company = glamorous.h4({
+  fontSize: '1.414em',
+});
+
+const Role = glamorous.h5({
+  fontSize: '1.125em',
+  fontWeight: 200,
+});
+
+const FontSmall = glamorous.p({
+  fontSize: '0.875em',
+  marginBottom: '1.3em',
+});
+
+const Text = glamorous.p({
+  marginBottom: '1.3em',
+});
+
+const ResponsibilityList = glamorous.ul({
+  listStyle: 'none',
+  paddingLeft: '25px',
+});
+
+const ResponsibilityItem = glamorous.li({
+  position: 'relative',
+  '&::before': {
+    content: ' ',
+    position: 'absolute',
+    top: 6,
+    left: -20,
+    display: 'block',
+    width: 8,
+    height: 8,
+    borderRadius: '50%',
+    background: '#ddd',
+  },
+});
+
 export default ({ job, first = false, last = false }) => (
   <ExperienceRow first={first} last={last}>
     <Col>
-      <h4>{job.company}</h4>
-      <h5>{job.role}</h5>
+      <Company>{job.company}</Company>
+      <Role>{job.role}</Role>
       <Dates from={job.from} to={job.to} />
     </Col>
 
     <Col flex="2">
-      <p>{job.details}</p>
+      <FontSmall>{job.details}</FontSmall>
 
-      <b>My responsibilities included :</b>
+      <Text>
+        <b>My responsibilities included :</b>
+      </Text>
 
-      <ul>
+      <ResponsibilityList>
         {job.responsibilities.map((responsibility, index) => (
-          <li key={index}>{responsibility}</li>
+          <ResponsibilityItem key={index}>
+            <FontSmall>{responsibility}</FontSmall>
+          </ResponsibilityItem>
         ))}
-      </ul>
+      </ResponsibilityList>
     </Col>
   </ExperienceRow>
 );

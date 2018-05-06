@@ -45,7 +45,7 @@ export default class MyDocument extends Document {
       fontStyle: 'normal',
       fontWeight: 'normal',
       src:
-        "url(/static/atcharris-regular-webfont.eot), url(/static/atcharris-regular-webfont.eot?#iefix) format('embedded-opentype'), url(/static/atcharris-regular-webfont.woff2) format('woff2'), url(/static/atcharris-regular-webfont.woff) format('woff'), url(/static/atcharris-regular-webfont.ttf) format('truetype'), url(/static/atcharris-regular-webfont.svg#atc_harrisbold) format('svg')",
+        "url(https://s3.eu-west-2.amazonaws.com/httpete/atcharris-regular-webfont.eot), url(https://s3.eu-west-2.amazonaws.com/httpete/atcharris-regular-webfont.eot?#iefix) format('embedded-opentype'), url(https://s3.eu-west-2.amazonaws.com/httpete/atcharris-regular-webfont.woff2) format('woff2'), url(https://s3.eu-west-2.amazonaws.com/httpete/atcharris-regular-webfont.woff) format('woff'), url(https://s3.eu-west-2.amazonaws.com/httpete/atcharris-regular-webfont.ttf) format('truetype'), url(https://s3.eu-west-2.amazonaws.com/httpete/atcharris-regular-webfont.svg#atc_harrisbold) format('svg')",
     });
 
     return (

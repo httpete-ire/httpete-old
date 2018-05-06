@@ -29,7 +29,10 @@ if (typeof window !== 'undefined') {
 
 export default () => (
   <Layout>
-    <Header backgroundImage="url(/static/desk.jpg)" height="65vh">
+    <Header
+      backgroundImage="url(https://s3.eu-west-2.amazonaws.com/httpete/desk.jpg)"
+      height="65vh"
+    >
       <Container>
         <Row>
           <Nav />

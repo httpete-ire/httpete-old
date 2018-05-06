@@ -36,7 +36,7 @@ export default class ProjectsPage extends React.Component {
 
     return (
       <Layout>
-        <Header backgroundImage="url(/static/desk.jpg)">
+        <Header backgroundImage="url(https://s3.eu-west-2.amazonaws.com/httpete/desk.jpg)">
           <Container>
             <Row>
               <Nav />

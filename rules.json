@@ -1,0 +1,8 @@
+{
+  "rules": [
+    {
+      "pathname": "/static",
+      "dest": "https://s3.eu-west-2.amazonaws.com/httpete/"
+    }
+  ]
+}

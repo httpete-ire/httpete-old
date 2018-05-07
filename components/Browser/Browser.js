@@ -1,3 +1,4 @@
+import { Fragment } from 'react';
 import glamorous from 'glamorous';
 import BrowserHeader from './BrowserHeader';
 import BrowserBody from './BrowserBody';
@@ -19,8 +20,8 @@ export default ({ image, main = false }) =>
       <BrowserBody image={image} />
     </MainBrowser>
   ) : (
-    <div>
+    <Fragment>
       <BrowserHeader />
       <BrowserBody image={image} />
-    </div>
+    </Fragment>
   );

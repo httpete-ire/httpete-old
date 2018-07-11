@@ -25,6 +25,13 @@ const styleProps = props => {
         marginLeft: '0',
       },
     });
+  } else {
+    styles.push({
+      marginRight: '40px',
+      [mediaQueries.medium]: {
+        marginRight: '0',
+      },
+    });
   }
 
   return styles;

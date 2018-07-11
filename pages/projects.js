@@ -1,25 +1,25 @@
-import { projectsById } from "./../Data/";
-import { Container, Row, Col, WrappedRow } from "./../components/Grid/";
-import Header from "./../components/Header/";
-import Nav from "./../components/Nav/";
-import Logo from "./../components/Nav/Logo";
-import Title from "./../components/Title/";
-import Browser from "./../components/Browser";
-import Projects from "./../components/Projects";
-import Svg from "./../components/Svg";
-import ContactDetails from "./../components/ContactDetails";
-import MainTitle from "./../components/MainTitle/";
-import { OutlineButton, DefaultButton } from "./../components/Buttons/";
+import { projectsById } from './../Data/';
+import { Container, Row, Col, WrappedRow } from './../components/Grid/';
+import Header from './../components/Header/';
+import Nav from './../components/Nav/';
+import Logo from './../components/Nav/Logo';
+import Title from './../components/Title/';
+import Browser from './../components/Browser';
+import Projects from './../components/Projects';
+import Svg from './../components/Svg';
+import ContactDetails from './../components/ContactDetails';
+import MainTitle from './../components/MainTitle/';
+import { OutlineButton, DefaultButton } from './../components/Buttons/';
 
-import ErrorPage from "./_error";
+import ErrorPage from './_error';
 
-import Layout from "./../layout/";
-import Wrapper from "./../layout/Wrapper";
-import Content from "./../layout/Content";
-import Section from "./../layout/Section";
-import Footer from "./../layout/Footer";
+import Layout from './../layout/';
+import Wrapper from './../layout/Wrapper';
+import Content from './../layout/Content';
+import Section from './../layout/Section';
+import Footer from './../layout/Footer';
 
-import { iconMap } from "./../icons/";
+import { iconMap } from './../icons/';
 
 export default class ProjectsPage extends React.Component {
   static async getInitialProps({ query: { name }, res }) {
@@ -37,7 +37,7 @@ export default class ProjectsPage extends React.Component {
 
     return (
       <Layout>
-        <Header backgroundImage="url(https://s3.eu-west-2.amazonaws.com/httpete/desk.jpg)">
+        <Header backgroundImage="url(/static/desk.jpg)">
           <Container>
             <Row>
               <Nav />
@@ -68,7 +68,7 @@ export default class ProjectsPage extends React.Component {
                     </p>
                   </Col>
                   <Col>
-                    <p style={{ whiteSpace: "pre-line" }}>{project.sideDesc}</p>
+                    <p style={{ whiteSpace: 'pre-line' }}>{project.sideDesc}</p>
                   </Col>
                 </Row>
               </Section>

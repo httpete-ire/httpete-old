@@ -4,7 +4,7 @@ import Section from './../../layout/Section';
 import { Row } from './../Grid';
 
 export default ({ projects, showLinks = false }) =>
-  projects.map((project, index) => (
+  projects.filter(({ hide }) => !hide).map((project, index) => (
     <Section
       marginBottom={projects.length - 1 === index ? 0 : 120}
       key={project.id}

@@ -10,6 +10,7 @@
     "sideDesc":
       "Lorem ipsum dolor amet vHS listicle church-key kickstarter tofu, pitchfork plaid gluten-free roof party. Scenester letterpress put a bird on it poutine gochujang.\n\n Lorem ipsum dolor amet vHS listicle church-key kickstarter tofu, pitchfork plaid gluten-free roof party. Scenester letterpress put a bird on it poutine gochujang.",
     "technologies": ["ts", "nodejs", "react", "redux", "sass", "webpack"],
+    "hide": true,
     "screens": [
       {
         "title": "Filters",

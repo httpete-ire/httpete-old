@@ -33,7 +33,7 @@ export default () => (
           <DropdownContainer>
             <h4>Work</h4>
             <Dropdown className="dropdown">
-              {projects.map(project => (
+              {projects.filter(({ hide }) => !hide).map(project => (
                 <DropdownItem key={project.id}>
                   <Link href={`/projects/${project.id}/`}>
                     <a>{project.title}</a>
@@ -43,13 +43,13 @@ export default () => (
             </Dropdown>
           </DropdownContainer>
 
-          <li>
+          {/*<li>
             <h4>
               <Link href="/cv">
                 <a>CV</a>
               </Link>
             </h4>
-          </li>
+          </li>*/}
         </MainNav>
       </li>
     </MainNav>

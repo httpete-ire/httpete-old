@@ -12,8 +12,13 @@ export default ({ projects, showLinks = false }) =>
       <Row>
         {index % 2 === 0
           ? [
-              <ProjectImage image={project.mainImage} rightAligned={false} />,
+              <ProjectImage
+                key={`${project.id}-image`}
+                image={project.mainImage}
+                rightAligned={false}
+              />,
               <ProjectDesc
+                key={`${project.id}-desc`}
                 title={project.title}
                 mainDesc={project.mainDesc}
                 showLink={showLinks}
@@ -22,12 +27,17 @@ export default ({ projects, showLinks = false }) =>
             ]
           : [
               <ProjectDesc
+                key={`${project.id}-desc`}
                 title={project.title}
                 mainDesc={project.mainDesc}
                 showLink={showLinks}
                 push={false}
               />,
-              <ProjectImage image={project.mainImage} rightAligned={true} />,
+              <ProjectImage
+                key={`${project.id}-image`}
+                image={project.mainImage}
+                rightAligned={true}
+              />,
             ]}
       </Row>
     </Section>

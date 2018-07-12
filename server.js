@@ -21,7 +21,3 @@ app.prepare().then(() => {
 
   server.use(handler).listen(3000);
 });
-
-// Cache-Control: max-age=180, s-maxage=86400
-
-// /static/

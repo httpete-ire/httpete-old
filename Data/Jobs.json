@@ -5,9 +5,11 @@
     "role": "Front-end community lead",
     "from": "2017",
     "to": "present",
-    "details": "This is dummy text",
+    "details":
+      "Lorem ipsum dolor amet chicharrones forage before they sold out, fingerstache +1 hot chicken meh vexillologist keytar typewriter. Shaman freegan wolf, prism meh YOLO green juice pop-up pok pok hot chicken keytar raclette.",
     "responsibilities": [
-      "An online documentation platform for creating, managing and sharing docs. Formatted documentation is easily written using an online text editor and Markdown."
+      "Lorem ipsum dolor amet chicharrones forage before they sold out, fingerstache +1 hot chicken meh vexillologist keytar typewriter.",
+      "Lorem ipsum dolor amet chicharrones forage before they sold out, fingerstache +1 hot chicken meh vexillologist keytar typewriter."
     ]
   },
   {
@@ -16,9 +18,11 @@
     "role": "Javascript engineer",
     "from": "2016",
     "to": "present",
-    "details": "This is dummy text",
+    "details":
+      "Lorem ipsum dolor amet chicharrones forage before they sold out, fingerstache +1 hot chicken meh vexillologist keytar typewriter. Shaman freegan wolf, prism meh YOLO green juice pop-up pok pok hot chicken keytar raclette.",
     "responsibilities": [
-      "An online documentation platform for creating, managing and sharing docs. Formatted documentation is easily written using an online text editor and Markdown."
+      "Lorem ipsum dolor amet chicharrones forage before they sold out, fingerstache +1 hot chicken meh vexillologist keytar typewriter.",
+      "Lorem ipsum dolor amet chicharrones forage before they sold out, fingerstache +1 hot chicken meh vexillologist keytar typewriter."
     ]
   },
   {
@@ -55,7 +59,8 @@
     "role": "Front-end developer",
     "from": "2011",
     "to": "2014",
-    "details": "This is dummy text",
+    "details":
+      "Lorem ipsum dolor amet chicharrones forage before they sold out, fingerstache +1 hot chicken meh vexillologist keytar typewriter. Shaman freegan wolf, prism meh YOLO green juice pop-up pok pok hot chicken keytar raclette.",
     "responsibilities": [
       "designing, developing and maintaining fully functioning websites, several of these were integrated with the businesses custom backend systems",
       "working with a backend developer to add new features to the website/backend system",

@@ -9,6 +9,7 @@ import Browser from './../components/Browser';
 import Projects from './../components/Projects';
 import Svg from './../components/Svg';
 import ContactDetails from './../components/ContactDetails';
+import Profile from './../components/Profile';
 
 import Layout from './../layout/';
 import Wrapper from './../layout/Wrapper';
@@ -44,7 +45,7 @@ export default () => (
             <Title inViewColor="#ddd">About</Title>
             <Row>
               <Col flex="3" marginBottom="18">
-                <p>About content</p>
+                <Profile />
               </Col>
               <Col>
                 <ContactDetails />

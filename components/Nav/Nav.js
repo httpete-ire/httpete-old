@@ -43,13 +43,13 @@ export default () => (
             </Dropdown>
           </DropdownContainer>
 
-          {/*<li>
+          <li>
             <h4>
               <Link href="/cv">
                 <a>CV</a>
               </Link>
             </h4>
-          </li>*/}
+          </li>
         </MainNav>
       </li>
     </MainNav>

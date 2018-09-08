@@ -1,4 +1,4 @@
-import glamorous from 'glamorous';
+import styled from 'react-emotion';
 import { mediaQueries } from './../../config';
 
 export const styles = {
@@ -9,8 +9,6 @@ export const styles = {
   },
 };
 
-const Row = glamorous.div(styles);
-
-Row.propsAreCssOverrides = true;
+const Row = styled('div')(styles);
 
 export default Row;

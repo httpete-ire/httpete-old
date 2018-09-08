@@ -20,13 +20,16 @@
   },
   "homepage": "https://github.com/httpete-ire/httpete#readme",
   "dependencies": {
+    "emotion": "^9.2.8",
+    "emotion-server": "^9.2.8",
     "express": "^4.16.3",
     "glamor": "^2.20.40",
     "glamorous": "^4.12.5",
     "next": "^6.0.0",
     "next-routes": "^1.4.1",
     "react": "^16.3.2",
-    "react-dom": "^16.3.2"
+    "react-dom": "^16.3.2",
+    "react-emotion": "^9.2.8"
   },
   "devDependencies": {
     "raw-loader": "^0.5.1",

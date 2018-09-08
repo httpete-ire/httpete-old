@@ -1,12 +1,45 @@
 import Document, { Head, Main, NextScript } from 'next/document';
-import { renderStatic } from 'glamor/server';
-import { css } from 'glamor';
 import 'glamor/reset';
+
+import { extractCritical } from 'emotion-server';
+import { injectGlobal } from 'emotion';
+
+injectGlobal`
+  *, *:before, *:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+ a { 
+   text-decoration: none;
+   color: #fff;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  p {
+    line-height: 1.4;
+  }
+
+  @font-face {
+    font-family: 'atcharris-regular';
+    font-style: normal;
+    font-weight: normal;
+    src: "url(/static/atcharris-regular-webfont.eot), url(/static/atcharris-regular-webfont.eot?#iefix) format('embedded-opentype'), url(/static/atcharris-regular-webfont.woff2) format('woff2'), url(/static/atcharris-regular-webfont.woff) format('woff'), url(/static/atcharris-regular-webfont.ttf) format('truetype'), url(/static/atcharris-regular-webfont.svg#atc_harrisbold) format('svg')";
+  }
+
+  html {
+    font-family: 'atcharris-regular';
+  }
+`;
 
 export default class MyDocument extends Document {
   static async getInitialProps({ renderPage }) {
     const page = renderPage();
-    const styles = renderStatic(() => page.html);
+    const styles = extractCritical(() => page.html);
     return { ...page, ...styles };
   }
 
@@ -29,25 +62,6 @@ export default class MyDocument extends Document {
   }
 
   render() {
-    css.global('a', { 'text-decoration': 'none', color: '#fff' });
-
-    css.global('*, *:before, *:after', {
-      boxSizing: 'border-box',
-      margin: 0,
-      padding: 0,
-    });
-
-    css.global('img', { maxWidth: '100%' });
-    css.global('p', { lineHeight: '1.4' });
-
-    const family = css.fontFace({
-      fontFamily: 'atcharris-regular',
-      fontStyle: 'normal',
-      fontWeight: 'normal',
-      src:
-        "url(/static/atcharris-regular-webfont.eot), url(/static/atcharris-regular-webfont.eot?#iefix) format('embedded-opentype'), url(/static/atcharris-regular-webfont.woff2) format('woff2'), url(/static/atcharris-regular-webfont.woff) format('woff'), url(/static/atcharris-regular-webfont.ttf) format('truetype'), url(/static/atcharris-regular-webfont.svg#atc_harrisbold) format('svg')",
-    });
-
     return (
       <html>
         <Head>
@@ -56,7 +70,7 @@ export default class MyDocument extends Document {
         </Head>
         <body
           className={this.state.loaded ? 'loaded' : ''}
-          style={{ fontFamily: family, background: '#fafafa' }}
+          style={{ background: '#fafafa' }}
         >
           <Main />
           <NextScript />

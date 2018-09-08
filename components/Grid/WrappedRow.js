@@ -1,4 +1,4 @@
-import glamorous from 'glamorous';
+import styled from 'react-emotion';
 import { mediaQueries } from './../../config';
 import { styles as rowStyles } from './Row';
 
@@ -9,4 +9,4 @@ const styles = {
   },
 };
 
-export default glamorous.div(rowStyles, styles);
+export default styled('div')({ ...rowStyles, ...styles });

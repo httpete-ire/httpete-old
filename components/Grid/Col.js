@@ -1,4 +1,4 @@
-import glamorous from 'glamorous';
+import styled from 'react-emotion';
 import { mediaQueries } from './../../config';
 
 const styles = {
@@ -9,7 +9,7 @@ const styles = {
   },
 };
 
-const Col = glamorous.div(styles, props => {
+const Col = styled('div')(styles, props => {
   let styles = [];
 
   if (props.browser) {
@@ -43,9 +43,19 @@ const Col = glamorous.div(styles, props => {
     });
   }
 
+  if (props.flex) {
+    styles.push({
+      flex: props.flex,
+    });
+  }
+
+  if (props.marginBottom) {
+    styles.push({
+      marginBottom: props.marginBottom,
+    });
+  }
+
   return styles;
 });
-
-Col.propsAreCssOverrides = true;
 
 export default Col;

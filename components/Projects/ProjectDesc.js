@@ -1,5 +1,5 @@
 import glamorous from 'glamorous';
-import { Col } from './../Grid';
+
 import ProjectTitle from './ProjectTitle';
 import { mediaQueries } from './../../config';
 import { DefaultButton } from './../Buttons/';

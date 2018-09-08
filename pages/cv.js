@@ -86,6 +86,7 @@ export default () => (
                   course="Bachelor of Science (Honours) in Computing in Multimedia Systems/Web Engineering"
                   from="2012"
                   to="2016"
+                  result="First class honours"
                 />
               </Col>
 

@@ -5,11 +5,11 @@
     "role": "Front-end community lead",
     "from": "2017",
     "to": "present",
-    "details":
-      "Lorem ipsum dolor amet chicharrones forage before they sold out, fingerstache +1 hot chicken meh vexillologist keytar typewriter. Shaman freegan wolf, prism meh YOLO green juice pop-up pok pok hot chicken keytar raclette.",
+    "details": "As well as my current role as a Javascript engineer on the crowdfunding product I also lead the frontend community in JustGiving.",
     "responsibilities": [
-      "Lorem ipsum dolor amet chicharrones forage before they sold out, fingerstache +1 hot chicken meh vexillologist keytar typewriter.",
-      "Lorem ipsum dolor amet chicharrones forage before they sold out, fingerstache +1 hot chicken meh vexillologist keytar typewriter."
+      "mentor junior developers to help them in their careers",
+      "core contributor to the share component library that is used throughout JustGiving",
+      "manage frontend recruitment"
     ]
   },
   {
@@ -18,11 +18,11 @@
     "role": "Javascript engineer",
     "from": "2016",
     "to": "present",
-    "details":
-      "Lorem ipsum dolor amet chicharrones forage before they sold out, fingerstache +1 hot chicken meh vexillologist keytar typewriter. Shaman freegan wolf, prism meh YOLO green juice pop-up pok pok hot chicken keytar raclette.",
+    "details": "JustGiving is one of the worlds largest online giving platforms. Have worked across several teams in the company working on various projects to modernise JustGivings front-end applications using React.",
     "responsibilities": [
-      "Lorem ipsum dolor amet chicharrones forage before they sold out, fingerstache +1 hot chicken meh vexillologist keytar typewriter.",
-      "Lorem ipsum dolor amet chicharrones forage before they sold out, fingerstache +1 hot chicken meh vexillologist keytar typewriter."
+      "part of a cross functional team tasked with rebuilding the fundraising page, JustGivings core product, using React and Redux",
+      "core member of a development team who maintain and add new functionality to Justgiving’s crowdfunding platform, a large scale React/Redux app written in TypeScript",
+      "created an analytics React component library that easily allows developers to integrate analytics tracking into React projects"
     ]
   },
   {
@@ -31,10 +31,8 @@
     "role": "Front-end developer",
     "from": "June 2015",
     "to": "September 2015",
-    "details":
-      "Summer work placement in IBM's design studio as a front-end developer. Part of a team tasked with finding new ways to communicate IBM's Design Thinking. The project went on to win an IDI award for best Design Education and Industry project.",
+    "details": "Four month contract in IBM's design studio as a front-end developer. Part of a team tasked with finding new ways to communicate IBM's Design Thinking. The project went on to win an IDI award for best Design Education and Industry project.",
     "responsibilities": [
-      "exploring ways technology can be used to engage with the user",
       "working with designers to rapidly build prototypes to validate concepts",
       "working with the team to build a working prototype of the system we proposed which was eventually presented to the president and chief technical officer of IBM Design"
     ]
@@ -45,8 +43,7 @@
     "role": "Web developer",
     "from": "2014",
     "to": "2015",
-    "details":
-      "Joined a full development team for a 5 month work placement as a web developer. As a result of my performance I was offered a part time position when college resumed.",
+    "details": "Joined a full development team for a 5 month work placement as a web developer. As a result of my performance I was offered a part time position when college resumed.",
     "responsibilities": [
       "working as part of the development team to build commercial applications and websites",
       "working closely with experienced designers to ensure the finished application/website met the high standards the client expected",
@@ -59,8 +56,6 @@
     "role": "Front-end developer",
     "from": "2011",
     "to": "2014",
-    "details":
-      "Lorem ipsum dolor amet chicharrones forage before they sold out, fingerstache +1 hot chicken meh vexillologist keytar typewriter. Shaman freegan wolf, prism meh YOLO green juice pop-up pok pok hot chicken keytar raclette.",
     "responsibilities": [
       "designing, developing and maintaining fully functioning websites, several of these were integrated with the businesses custom backend systems",
       "working with a backend developer to add new features to the website/backend system",

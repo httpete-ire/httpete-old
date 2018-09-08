@@ -65,7 +65,7 @@ export default () => (
           </Section>
 
           <Section marginBottom="74">
-            <Title inViewColor="#ddd">Education</Title>
+            <Title>Education</Title>
             <Row>
               <Col>
                 <Education
@@ -88,7 +88,7 @@ export default () => (
           </Section>
 
           <Section marginBottom="0">
-            <Title inViewColor="#ddd">Experience</Title>
+            <Title>Experience</Title>
 
             {jobs.map((job, index) => (
               <Experience

@@ -12,8 +12,7 @@ function throttle(callback, limit) {
 }
 
 const offset = {
-  top: 0.1,
-  bottom: 0.5,
+  top: 0.5,
 };
 
 class InView extends React.Component {
@@ -36,12 +35,13 @@ class InView extends React.Component {
   inView = throttle(() => {
     const windowHeight = document.documentElement.clientHeight;
     const topBoundry = windowHeight * offset.top;
-    const bottomBoundry = windowHeight * offset.bottom;
     const elementTop =
       this.element.getBoundingClientRect().top -
       (window.pageYOffset || document.documentElement.scrollTop);
 
-    const isInView = elementTop > topBoundry && elementTop < bottomBoundry;
+    const isInView =
+      this.element.getBoundingClientRect().top > 0 &&
+      this.element.getBoundingClientRect().top < topBoundry;
 
     this.setState({
       isInView,

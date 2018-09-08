@@ -65,7 +65,20 @@ export default () => (
           </Section>
 
           <Section marginBottom="74">
-            <Title>Education</Title>
+            <Title>Experience</Title>
+
+            {jobs.map((job, index) => (
+              <Experience
+                key={job.id}
+                job={job}
+                first={index === 0}
+                last={index === jobs.length - 1}
+              />
+            ))}
+          </Section>
+
+          <Section marginBottom="0">
+            <Title swap>Education</Title>
             <Row>
               <Col>
                 <Education
@@ -85,19 +98,6 @@ export default () => (
                 />
               </Col>
             </Row>
-          </Section>
-
-          <Section marginBottom="0">
-            <Title>Experience</Title>
-
-            {jobs.map((job, index) => (
-              <Experience
-                key={job.id}
-                job={job}
-                first={index === 0}
-                last={index === jobs.length - 1}
-              />
-            ))}
           </Section>
         </Content>
       </Container>

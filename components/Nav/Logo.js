@@ -1,7 +1,7 @@
-import glamorous from 'glamorous';
+import styled from 'react-emotion';
 import Link from 'next/link';
 
-const H4 = glamorous.h4({
+const H4 = styled('h4')({
   fontSize: '1.414em',
   color: '#fff',
   width: '135px',
@@ -14,7 +14,7 @@ const H4 = glamorous.h4({
   },
 });
 
-const Delimiter = glamorous.span({
+const Delimiter = styled('span')({
   opacity: 1,
   position: 'relative',
   top: '5px',
@@ -26,7 +26,7 @@ const Delimiter = glamorous.span({
   color: '#b4b4b4',
 });
 
-const Dashes = glamorous.span({
+const Dashes = styled('span')({
   top: 1,
   position: 'relative',
 });
@@ -36,9 +36,11 @@ const Logo = () => {
     <Link href="/">
       <a href="/">
         <H4>
-          http<Delimiter className="Delimiter">
+          http
+          <Delimiter className="Delimiter">
             :<Dashes>//</Dashes>
-          </Delimiter>ete
+          </Delimiter>
+          ete
         </H4>
       </a>
     </Link>

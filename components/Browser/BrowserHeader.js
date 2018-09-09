@@ -1,4 +1,4 @@
-import glamorous from 'glamorous';
+import styled from 'react-emotion';
 
 const styles = {
   width: '100%',
@@ -8,9 +8,9 @@ const styles = {
   borderRadius: '5px 5px 0 0',
 };
 
-const BrowserHeader = glamorous.div(styles);
+const BrowserHeader = styled('div')(styles);
 
-const BrowserButton = glamorous.span({
+const BrowserButton = styled('span')({
   width: '12px',
   height: '12px',
   display: 'inline-block',

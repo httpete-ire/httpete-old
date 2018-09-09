@@ -1,5 +1,4 @@
 import Document, { Head, Main, NextScript } from 'next/document';
-import 'glamor/reset';
 
 import { extractCritical } from 'emotion-server';
 import { injectGlobal } from 'emotion';
@@ -37,9 +36,9 @@ injectGlobal`
 `;
 
 export default class MyDocument extends Document {
-  static async getInitialProps({ renderPage }) {
+  static getInitialProps({ renderPage }) {
     const page = renderPage();
-    const styles = extractCritical(() => page.html);
+    const styles = extractCritical(page.html);
     return { ...page, ...styles };
   }
 

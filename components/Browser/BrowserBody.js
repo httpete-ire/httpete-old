@@ -1,4 +1,4 @@
-import glamorous from 'glamorous';
+import styled from 'react-emotion';
 
 const styles = {
   overflow: 'hidden',
@@ -8,7 +8,7 @@ const styles = {
   fontSize: 0,
 };
 
-const BrowserHeader = glamorous.div(styles);
+const BrowserHeader = styled('div')(styles);
 
 export default ({ image }) => (
   <BrowserHeader>

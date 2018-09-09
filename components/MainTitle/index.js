@@ -1,6 +1,6 @@
-import glamorous from 'glamorous';
+import styled from 'react-emotion';
 
-const MainTitle = glamorous.h1({
+const MainTitle = styled('h1')({
   width: '100%',
   color: '#fff',
   fontWeight: 600,

@@ -1,4 +1,4 @@
-import glamorous from 'glamorous';
+import styled from 'react-emotion';
 
 const styles = {
   position: 'absolute',
@@ -9,9 +9,9 @@ const styles = {
   paddingTop: 10,
 };
 
-export default glamorous.ul(styles);
+export default styled('ul')(styles);
 
-const DropdownItem = glamorous.li({
+const DropdownItem = styled('li')({
   color: '#DDD',
   marginBottom: '8px',
   fontSize: 14,
@@ -25,7 +25,7 @@ const DropdownItem = glamorous.li({
   },
 });
 
-const DropdownContainer = glamorous.li({
+const DropdownContainer = styled('li')({
   ':hover .dropdown': {
     display: 'block',
   },

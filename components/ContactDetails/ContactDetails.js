@@ -1,7 +1,7 @@
-import glamorous from 'glamorous';
+import styled from 'react-emotion';
 import { mediaQueries } from './../../config';
 
-const ContactList = glamorous.ul({
+const ContactList = styled('ul')({
   listStyle: 'none',
   margin: 0,
   [mediaQueries.small]: {
@@ -9,11 +9,11 @@ const ContactList = glamorous.ul({
   },
 });
 
-const ContactItem = glamorous.li({
+const ContactItem = styled('li')({
   marginBottom: 20,
 });
 
-const ContactLink = glamorous.a({
+const ContactLink = styled('a')({
   padding: '5px 7px',
   marginLeft: 25,
   borderBottom: '1px dashed #57CC88',

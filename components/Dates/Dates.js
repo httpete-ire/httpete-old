@@ -1,6 +1,6 @@
-import glamorous from 'glamorous';
+import styled from 'react-emotion';
 
-const Date = glamorous.p({
+const Date = styled('p')({
   color: '#bdbcbc',
   marginTop: 5,
   fontSize: '0.875em',

@@ -1,4 +1,4 @@
-import glamorous from 'glamorous';
+import styled from 'react-emotion';
 import { mediaQueries } from './../../config';
 
 const styles = {
@@ -18,7 +18,7 @@ const styles = {
   },
 };
 
-const Svg = glamorous.div(styles);
+const Svg = styled('div')(styles);
 
 export default ({ markup }) => (
   <Svg dangerouslySetInnerHTML={{ __html: markup }} />

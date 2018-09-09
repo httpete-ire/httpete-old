@@ -1,24 +1,24 @@
-import { rehydrate } from "glamor";
+import { hydrate } from 'react-emotion';
 
-import { Container, Row, Col, WrappedRow } from "./../components/Grid/";
-import Header from "./../components/Header/";
-import Nav from "./../components/Nav/";
-import Logo from "./../components/Nav/Logo";
-import ErrorMessage from "../components/ErrorMessage";
+import { Container, Row, Col, WrappedRow } from './../components/Grid/';
+import Header from './../components/Header/';
+import Nav from './../components/Nav/';
+import Logo from './../components/Nav/Logo';
+import ErrorMessage from '../components/ErrorMessage';
 
-import ContactDetails from "./../components/ContactDetails";
+import ContactDetails from './../components/ContactDetails';
 
-import Layout from "./../layout/";
-import Wrapper from "./../layout/Wrapper";
-import Content from "./../layout/Content";
-import Section from "./../layout/Section";
-import Footer from "./../layout/Footer";
+import Layout from './../layout/';
+import Wrapper from './../layout/Wrapper';
+import Content from './../layout/Content';
+import Section from './../layout/Section';
+import Footer from './../layout/Footer';
 
 // Adds server generated styles to glamor cache.
 // Has to run before any `style()` calls
 // '__NEXT_DATA__.ids' is set in '_document.js'
-if (typeof window !== "undefined") {
-  rehydrate(window.__NEXT_DATA__.ids);
+if (typeof window !== 'undefined') {
+  hydrate(window.__NEXT_DATA__.ids);
 }
 
 export default () => (

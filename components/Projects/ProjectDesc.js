@@ -1,4 +1,4 @@
-import glamorous from 'glamorous';
+import styled from 'react-emotion';
 
 import ProjectTitle from './ProjectTitle';
 import { mediaQueries } from './../../config';
@@ -37,7 +37,7 @@ const styleProps = props => {
   return styles;
 };
 
-const Desc = glamorous.div(styles, styleProps);
+const Desc = styled('div')(styles, styleProps);
 
 export default ({ title, mainDesc, push = false, showLink }) => (
   <Desc push={push}>

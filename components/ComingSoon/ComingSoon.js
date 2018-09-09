@@ -1,4 +1,4 @@
-import glamorous from 'glamorous';
+import styled from 'react-emotion';
 
 const styles = {
   textAlign: 'center',
@@ -7,6 +7,6 @@ const styles = {
   color: '#666',
 };
 
-const ComingSoon = glamorous.h1(styles);
+const ComingSoon = styled('h1')(styles);
 
 export default () => <ComingSoon>Coming soon...🤓</ComingSoon>;

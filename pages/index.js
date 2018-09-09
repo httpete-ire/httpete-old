@@ -1,11 +1,10 @@
-import { rehydrate } from 'glamor';
+import { hydrate } from 'react-emotion';
 
 import { Container, Row, Col, WrappedRow } from './../components/Grid/';
 import Header from './../components/Header/';
 import Nav from './../components/Nav/';
 import Logo from './../components/Nav/Logo';
 import Title from './../components/Title/';
-import Browser from './../components/Browser';
 import Projects from './../components/Projects';
 import Svg from './../components/Svg';
 import ContactDetails from './../components/ContactDetails';
@@ -19,13 +18,13 @@ import Footer from './../layout/Footer';
 
 import { iconMap } from './../icons/';
 
-import { projects, projectsById, skills } from './../Data/';
+import { projects, skills } from './../Data/';
 
 // Adds server generated styles to glamor cache.
 // Has to run before any `style()` calls
 // '__NEXT_DATA__.ids' is set in '_document.js'
 if (typeof window !== 'undefined') {
-  rehydrate(window.__NEXT_DATA__.ids);
+  hydrate(window.__NEXT_DATA__.ids);
 }
 
 export default () => (
@@ -64,7 +63,7 @@ export default () => (
             </Row>
           </Section>
 
-          <Section marginBottom={0}>
+          <Section last>
             <Title>Projects</Title>
             <Projects projects={projects} showLinks />
           </Section>

@@ -1,4 +1,4 @@
-import glamorous from 'glamorous';
+import styled from 'react-emotion';
 
 const styles = {
   background: '#fafafa',
@@ -11,4 +11,4 @@ const styles = {
   },
 };
 
-export default glamorous.section(styles);
+export default styled('section')(styles);

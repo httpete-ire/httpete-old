@@ -1,26 +1,26 @@
-import glamorous from 'glamorous';
+import styled from 'react-emotion';
 import Dates from './../Dates/';
 import { mediaQueries } from './../../config';
 
-const Institute = glamorous.h5({
+const Institute = styled('h5')({
   fontSize: '1.125em',
   fontWeight: 600,
   marginBottom: 5,
   lineHeight: 1.5,
 });
 
-const Course = glamorous.p({
+const Course = styled('p')({
   lineHeight: 1.5,
 });
 
-const Education = glamorous.div({
+const Education = styled('div')({
   marginBottom: 0,
   [mediaQueries.small]: {
     marginBottom: 24,
   },
 });
 
-const Result = glamorous.p({
+const Result = styled('p')({
   marginTop: '6px',
   fontWeight: 'bold',
 });

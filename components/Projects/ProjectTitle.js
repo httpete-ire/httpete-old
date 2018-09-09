@@ -1,4 +1,4 @@
-import glamorous from 'glamorous';
+import styled from 'react-emotion';
 import { mediaQueries } from './../../config';
 
 const styles = {
@@ -13,4 +13,4 @@ const styles = {
   },
 };
 
-export default glamorous.h5(styles);
+export default styled('h5')(styles);

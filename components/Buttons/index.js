@@ -1,4 +1,4 @@
-import glamorous from 'glamorous';
+import styled from 'react-emotion';
 import { mediaQueries } from './../../config';
 
 const btnStyles = {
@@ -12,7 +12,7 @@ const btnStyles = {
   },
 };
 
-const OutlineButton = glamorous.a({
+const OutlineButton = styled('a')({
   ...btnStyles,
   border: '2px solid #dad9d9',
   color: '#dad9d9',
@@ -23,7 +23,7 @@ const OutlineButton = glamorous.a({
   },
 });
 
-const DefaultButton = glamorous.a({
+const DefaultButton = styled('a')({
   ...btnStyles,
   background: '#57CC88',
   '&:hover': {

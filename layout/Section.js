@@ -1,4 +1,4 @@
-import glamorous from 'glamorous';
+import styled from 'react-emotion';
 import { mediaQueries } from './../config';
 
 const styles = {
@@ -23,8 +23,6 @@ const styleProps = props => {
   return styles;
 };
 
-const Section = glamorous.section(styles, styleProps);
-
-Section.propsAreCssOverrides = true;
+const Section = styled('section')(styles, styleProps);
 
 export default Section;

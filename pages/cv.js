@@ -1,4 +1,4 @@
-import { rehydrate } from 'glamor';
+import { hydrate } from 'react-emotion';
 
 import { Container, Row, Col, WrappedRow } from './../components/Grid/';
 import Header from './../components/Header/';
@@ -25,7 +25,7 @@ import { jobs, skills } from './../Data/';
 // Has to run before any `style()` calls
 // '__NEXT_DATA__.ids' is set in '_document.js'
 if (typeof window !== 'undefined') {
-  rehydrate(window.__NEXT_DATA__.ids);
+  hydrate(window.__NEXT_DATA__.ids);
 }
 
 export default () => (

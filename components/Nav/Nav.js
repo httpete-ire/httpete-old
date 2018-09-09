@@ -1,29 +1,41 @@
-import glamorous from 'glamorous';
+import styled from 'react-emotion';
 import Link from 'next/link';
 import Logo from './Logo';
 import Dropdown, { DropdownItem, DropdownContainer } from './Dropdown';
 import { mediaQueries } from './../../config';
 import { projects, projectsById } from './../../Data/';
 
-const Nav = glamorous.nav({
+const Nav = styled('nav')({
   width: '100%',
 });
 
-const MainNav = glamorous.ul({
-  display: 'flex',
-  justifyContent: 'space-between',
-  listStyle: 'none',
-  padding: 0,
-  [mediaQueries.small]: {
-    padding: '0 30px',
+const MainNav = styled('ul')(
+  {
+    color: '#fff',
+    display: 'flex',
+    justifyContent: 'space-between',
+    listStyle: 'none',
+    padding: 0,
+    [mediaQueries.small]: {
+      padding: '0 30px',
+    },
   },
-});
+  props => {
+    const styles = {};
+
+    if (props.width) {
+      styles.width = props.width;
+    }
+
+    return styles;
+  }
+);
 
 MainNav.propsAreCssOverrides = true;
 
 export default () => (
   <Nav>
-    <MainNav color="#fff">
+    <MainNav>
       <li className="main-nav__item">
         <Logo />
       </li>

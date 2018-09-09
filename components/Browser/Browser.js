@@ -1,10 +1,9 @@
-import { Fragment } from 'react';
-import glamorous from 'glamorous';
+import styled from 'react-emotion';
 import BrowserHeader from './BrowserHeader';
 import BrowserBody from './BrowserBody';
 import { mediaQueries } from './../../config';
 
-const MainBrowser = glamorous.div({
+const MainBrowser = styled('div')({
   marginTop: 0,
   transition: 'margin-top 1.5s cubic-bezier(0.62, 0.07, 0.36, 1)',
   '.loaded &': {
@@ -12,7 +11,7 @@ const MainBrowser = glamorous.div({
   },
 });
 
-const Browser = glamorous.div({
+const Browser = styled('div')({
   marginBottom: 0,
   [mediaQueries.small]: {
     marginBottom: 24,

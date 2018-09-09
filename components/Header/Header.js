@@ -1,4 +1,4 @@
-import glamorous from 'glamorous';
+import styled from 'react-emotion';
 
 const styles = {
   height: '100vh',
@@ -8,8 +8,14 @@ const styles = {
   padding: '25px 0',
 };
 
-const Header = glamorous.header(styles);
+const Header = styled('header')(styles, props => {
+  const styles = {};
 
-Header.propsAreCssOverrides = true;
+  if (props.backgroundImage) {
+    styles.backgroundImage = props.backgroundImage;
+  }
+
+  return styles;
+});
 
 export default Header;

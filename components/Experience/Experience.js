@@ -1,10 +1,10 @@
-import glamorous from 'glamorous';
+import styled from 'react-emotion';
 import { Col } from './../Grid/';
 import { styles as rowStyles } from './../Grid/Row';
 import Dates from './../Dates/';
 import { mediaQueries } from './../../config';
 
-const ExperienceRow = glamorous.div(
+const ExperienceRow = styled('div')(
   {
     ...rowStyles,
     marginBottom: 35,
@@ -33,31 +33,31 @@ const ExperienceRow = glamorous.div(
 
 ExperienceRow.propsAreCssOverrides = true;
 
-const Company = glamorous.h4({
+const Company = styled('h4')({
   fontSize: '1.414em',
   marginBottom: 9,
 });
 
-const Role = glamorous.h5({
+const Role = styled('h5')({
   fontSize: '1.125em',
   fontWeight: 200,
 });
 
-const FontSmall = glamorous.p({
+const FontSmall = styled('p')({
   fontSize: '0.875em',
   marginBottom: '1.3em',
 });
 
-const Text = glamorous.p({
+const Text = styled('p')({
   marginBottom: '1.3em',
 });
 
-const ResponsibilityList = glamorous.ul({
+const ResponsibilityList = styled('ul')({
   listStyle: 'none',
   paddingLeft: '25px',
 });
 
-const ResponsibilityItem = glamorous.li({
+const ResponsibilityItem = styled('li')({
   position: 'relative',
   '&::before': {
     content: ' ',
@@ -72,7 +72,7 @@ const ResponsibilityItem = glamorous.li({
   },
 });
 
-const ExperienceCol = glamorous.div({
+const ExperienceCol = styled('div')({
   marginBottom: 0,
   [mediaQueries.medium]: {
     marginBottom: 18,

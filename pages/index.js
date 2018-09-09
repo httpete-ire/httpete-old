@@ -9,6 +9,7 @@ import Projects from './../components/Projects';
 import Svg from './../components/Svg';
 import ContactDetails from './../components/ContactDetails';
 import Profile from './../components/Profile';
+import PageViewTracking from './../components/PageViewTracking/';
 
 import Layout from './../layout/';
 import Wrapper from './../layout/Wrapper';
@@ -28,55 +29,57 @@ if (typeof window !== 'undefined') {
 }
 
 export default () => (
-  <Layout>
-    <Header backgroundImage="url(/static/desk.jpg)">
-      <Container>
-        <Row>
-          <Nav />
-        </Row>
-      </Container>
-    </Header>
+  <PageViewTracking>
+    <Layout>
+      <Header backgroundImage="url(/static/desk.jpg)">
+        <Container>
+          <Row>
+            <Nav />
+          </Row>
+        </Container>
+      </Header>
 
-    <Wrapper>
-      <Container backgroundColor="#ffffff">
-        <Content>
-          <Section marginBottom="74">
-            <Title inViewColor="#ddd">About</Title>
-            <Row>
-              <Col flex="3" marginBottom="18">
-                <Profile />
-              </Col>
-              <Col>
-                <ContactDetails />
-              </Col>
-            </Row>
-          </Section>
+      <Wrapper>
+        <Container backgroundColor="#ffffff">
+          <Content>
+            <Section marginBottom="74">
+              <Title inViewColor="#ddd">About</Title>
+              <Row>
+                <Col flex="3" marginBottom="18">
+                  <Profile />
+                </Col>
+                <Col>
+                  <ContactDetails />
+                </Col>
+              </Row>
+            </Section>
 
-          <Section>
-            <Title swap>Skills</Title>
-            <Row>
-              <WrappedRow>
-                {skills.map(skill => (
-                  <Svg key={skill} markup={iconMap[skill]} />
-                ))}
-              </WrappedRow>
-            </Row>
-          </Section>
+            <Section>
+              <Title swap>Skills</Title>
+              <Row>
+                <WrappedRow>
+                  {skills.map(skill => (
+                    <Svg key={skill} markup={iconMap[skill]} />
+                  ))}
+                </WrappedRow>
+              </Row>
+            </Section>
 
-          <Section last>
-            <Title>Projects</Title>
-            <Projects projects={projects} showLinks />
-          </Section>
-        </Content>
-      </Container>
-    </Wrapper>
+            <Section last>
+              <Title>Projects</Title>
+              <Projects projects={projects} showLinks />
+            </Section>
+          </Content>
+        </Container>
+      </Wrapper>
 
-    <Footer>
-      <Container>
-        <Col>
-          <Logo />
-        </Col>
-      </Container>
-    </Footer>
-  </Layout>
+      <Footer>
+        <Container>
+          <Col>
+            <Logo />
+          </Col>
+        </Container>
+      </Footer>
+    </Layout>
+  </PageViewTracking>
 );

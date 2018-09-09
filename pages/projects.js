@@ -10,6 +10,7 @@ import Svg from './../components/Svg';
 import ContactDetails from './../components/ContactDetails';
 import MainTitle from './../components/MainTitle/';
 import { OutlineButton, DefaultButton } from './../components/Buttons/';
+import PageViewTracking from './../components/PageViewTracking/';
 
 import ErrorPage from './_error';
 
@@ -36,100 +37,104 @@ export default class ProjectsPage extends React.Component {
     }
 
     return (
-      <Layout>
-        <Header backgroundImage="url(/static/desk.jpg)">
-          <Container>
-            <Row>
-              <Nav />
-            </Row>
-            <Row>
-              <MainTitle>{project.title}</MainTitle>
-            </Row>
-          </Container>
-        </Header>
+      <PageViewTracking>
+        <Layout>
+          <Header backgroundImage="url(/static/desk.jpg)">
+            <Container>
+              <Row>
+                <Nav />
+              </Row>
+              <Row>
+                <MainTitle>{project.title}</MainTitle>
+              </Row>
+            </Container>
+          </Header>
 
-        <Wrapper>
-          <Container backgroundColor="#ffffff">
-            <Content>
-              <Section marginBottom="74">
-                <Row>
-                  <Col>
-                    <Browser image={project.mainImage} main />
-                  </Col>
-                </Row>
-              </Section>
-
-              <Section>
-                <Title>Description</Title>
-                <Row>
-                  <Col>
-                    <p>
-                      <b>{project.projectDesc}</b>
-                    </p>
-                  </Col>
-                  <Col>
-                    <p style={{ whiteSpace: 'pre-line' }}>{project.sideDesc}</p>
-                  </Col>
-                </Row>
-              </Section>
-
-              <Section>
-                <Title swap>Technologies</Title>
-                <Row>
-                  <WrappedRow>
-                    {project.technologies.map(tech => (
-                      <Svg markup={iconMap[tech]} />
-                    ))}
-                  </WrappedRow>
-                </Row>
-              </Section>
-
-              <Section>
-                <Title>Project overview</Title>
-                <Projects projects={project.screens} />
-              </Section>
-
-              <Section marginBottom="0">
-                <Row>
-                  <Col />
-
-                  {project.applicationLink && (
+          <Wrapper>
+            <Container backgroundColor="#ffffff">
+              <Content>
+                <Section marginBottom="74">
+                  <Row>
                     <Col>
-                      <DefaultButton
-                        href={project.applicationLink}
-                        target="_blank"
-                      >
-                        View application
-                      </DefaultButton>
+                      <Browser image={project.mainImage} main />
                     </Col>
-                  )}
+                  </Row>
+                </Section>
 
-                  {project.sourceCodeLink && (
+                <Section>
+                  <Title>Description</Title>
+                  <Row>
                     <Col>
-                      <OutlineButton
-                        href={project.sourceCodeLink}
-                        target="_blank"
-                      >
-                        Source code
-                      </OutlineButton>
+                      <p>
+                        <b>{project.projectDesc}</b>
+                      </p>
                     </Col>
-                  )}
+                    <Col>
+                      <p style={{ whiteSpace: 'pre-line' }}>
+                        {project.sideDesc}
+                      </p>
+                    </Col>
+                  </Row>
+                </Section>
 
-                  <Col />
-                </Row>
-              </Section>
-            </Content>
-          </Container>
-        </Wrapper>
+                <Section>
+                  <Title swap>Technologies</Title>
+                  <Row>
+                    <WrappedRow>
+                      {project.technologies.map(tech => (
+                        <Svg markup={iconMap[tech]} />
+                      ))}
+                    </WrappedRow>
+                  </Row>
+                </Section>
 
-        <Footer>
-          <Container>
-            <Col>
-              <Logo />
-            </Col>
-          </Container>
-        </Footer>
-      </Layout>
+                <Section>
+                  <Title>Project overview</Title>
+                  <Projects projects={project.screens} />
+                </Section>
+
+                <Section marginBottom="0">
+                  <Row>
+                    <Col />
+
+                    {project.applicationLink && (
+                      <Col>
+                        <DefaultButton
+                          href={project.applicationLink}
+                          target="_blank"
+                        >
+                          View application
+                        </DefaultButton>
+                      </Col>
+                    )}
+
+                    {project.sourceCodeLink && (
+                      <Col>
+                        <OutlineButton
+                          href={project.sourceCodeLink}
+                          target="_blank"
+                        >
+                          Source code
+                        </OutlineButton>
+                      </Col>
+                    )}
+
+                    <Col />
+                  </Row>
+                </Section>
+              </Content>
+            </Container>
+          </Wrapper>
+
+          <Footer>
+            <Container>
+              <Col>
+                <Logo />
+              </Col>
+            </Container>
+          </Footer>
+        </Layout>
+      </PageViewTracking>
     );
   }
 }

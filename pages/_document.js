@@ -3,6 +3,8 @@ import Document, { Head, Main, NextScript } from 'next/document';
 import { extractCritical } from 'emotion-server';
 import { injectGlobal } from 'emotion';
 
+import PageViewTracking from './../components/PageViewTracking/';
+
 injectGlobal`
   *, *:before, *:after {
     box-sizing: border-box;
@@ -35,6 +37,8 @@ injectGlobal`
   }
 `;
 
+const GA_TRACKING_ID = 'UA-125400257-1';
+
 export default class MyDocument extends Document {
   static getInitialProps({ renderPage }) {
     const page = renderPage();
@@ -66,12 +70,28 @@ export default class MyDocument extends Document {
         <Head>
           <style dangerouslySetInnerHTML={{ __html: this.props.css }} />
           <meta name="viewport" content="width=device-width" />
+          <script
+            async
+            src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
+          />
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${GA_TRACKING_ID}');
+          `,
+            }}
+          />
         </Head>
         <body
           className={this.state.loaded ? 'loaded' : ''}
           style={{ background: '#fafafa' }}
         >
-          <Main />
+          <PageViewTracking>
+            <Main />
+          </PageViewTracking>
           <NextScript />
         </body>
       </html>

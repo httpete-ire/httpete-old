@@ -1,7 +1,5 @@
 import React from 'react';
 
-console.log(process.env);
-
 class PageViewTracking extends React.Component {
   componentDidMount() {
     window.gtag('config', 'UA-125400257-1', {

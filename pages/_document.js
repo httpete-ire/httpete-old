@@ -12,7 +12,7 @@ injectGlobal`
     padding: 0;
   }
 
- a { 
+ a {
    text-decoration: none;
    color: #fff;
   }
@@ -29,12 +29,18 @@ injectGlobal`
     font-family: 'atcharris-regular';
     font-style: normal;
     font-weight: normal;
-    src: "url(/static/atcharris-regular-webfont.eot), url(/static/atcharris-regular-webfont.eot?#iefix) format('embedded-opentype'), url(/static/atcharris-regular-webfont.woff2) format('woff2'), url(/static/atcharris-regular-webfont.woff) format('woff'), url(/static/atcharris-regular-webfont.ttf) format('truetype'), url(/static/atcharris-regular-webfont.svg#atc_harrisbold) format('svg')";
+    src: url(/static/atcharris-regular-webfont.eot),
+          url(/static/atcharris-regular-webfont.eot?#iefix) format('embedded-opentype'),
+          url(/static/atcharris-regular-webfont.woff2) format('woff2'),
+          url(/static/atcharris-regular-webfont.woff) format('woff'),
+          url(/static/atcharris-regular-webfont.ttf) format('truetype'),
+          url(https://httpete.com/static/atcharris-regular-webfont.svg#atc_harrisbold) format('svg');
   }
 
-  html {
+  body {
     font-family: 'atcharris-regular';
   }
+  
 `;
 
 const GA_TRACKING_ID = 'UA-125400257-1';
@@ -77,11 +83,11 @@ export default class MyDocument extends Document {
           <script
             dangerouslySetInnerHTML={{
               __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', '${GA_TRACKING_ID}');
-          `,
+                        window.dataLayer = window.dataLayer || [];
+                        function gtag(){dataLayer.push(arguments);}
+                        gtag('js', new Date());
+                        gtag('config', '${GA_TRACKING_ID}');
+                      `,
             }}
           />
         </Head>

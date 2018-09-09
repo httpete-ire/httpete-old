@@ -4,7 +4,7 @@ import { mediaQueries } from './../config';
 const styles = {
   marginBottom: 100,
   [mediaQueries.small]: {
-    marginBottom: '40px !important',
+    marginBottom: '40px',
   },
 };
 

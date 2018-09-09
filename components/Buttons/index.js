@@ -26,6 +26,7 @@ const OutlineButton = styled('a')({
 const DefaultButton = styled('a')(
   {
     ...btnStyles,
+    padding: '14px 20px',
     background: '#57CC88',
     '&:hover': {
       background: '#3ac072',

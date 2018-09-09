@@ -79,7 +79,7 @@ export default () => (
               ))}
             </Section>
 
-            <Section marginBottom="0">
+            <Section last>
               <Title swap>Education</Title>
               <Row>
                 <Col>

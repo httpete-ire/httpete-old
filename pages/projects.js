@@ -93,7 +93,7 @@ export default class ProjectsPage extends React.Component {
                   <Projects projects={project.screens} />
                 </Section>
 
-                <Section marginBottom="0">
+                <Section last>
                   <Row>
                     <Col />
 
@@ -102,6 +102,7 @@ export default class ProjectsPage extends React.Component {
                         <DefaultButton
                           href={project.applicationLink}
                           target="_blank"
+                          margin="0 0 30px 0"
                         >
                           View application
                         </DefaultButton>

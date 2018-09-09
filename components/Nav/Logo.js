@@ -4,7 +4,6 @@ import Link from 'next/link';
 const H4 = styled('h4')({
   fontSize: '1.414em',
   color: '#fff',
-  width: '135px',
   display: 'inline-block',
   cursor: 'pointer',
   margin: 0,

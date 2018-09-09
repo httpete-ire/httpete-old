@@ -82,7 +82,7 @@ export default class ProjectsPage extends React.Component {
                   <Row>
                     <WrappedRow>
                       {project.technologies.map(tech => (
-                        <Svg markup={iconMap[tech]} />
+                        <Svg key={tech} markup={iconMap[tech]} />
                       ))}
                     </WrappedRow>
                   </Row>

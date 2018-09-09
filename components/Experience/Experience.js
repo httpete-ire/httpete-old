@@ -59,17 +59,18 @@ const ResponsibilityList = styled('ul')({
 
 const ResponsibilityItem = styled('li')({
   position: 'relative',
-  '&::before': {
-    content: ' ',
-    position: 'absolute',
-    top: 6,
-    left: -20,
-    display: 'block',
-    width: 8,
-    height: 8,
-    borderRadius: '50%',
-    background: '#ddd',
-  },
+});
+
+const ResponsibilityDot = styled('span')({
+  position: 'absolute',
+  top: 6,
+  left: -20,
+  display: 'block',
+  width: 8,
+  height: 8,
+  borderRadius: '50%',
+  background: '#ddd',
+  fontFamily: 'working',
 });
 
 const ExperienceCol = styled('div')({
@@ -95,6 +96,7 @@ export default ({ job, first = false, last = false }) => (
       <ResponsibilityList>
         {job.responsibilities.map((responsibility, index) => (
           <ResponsibilityItem key={index}>
+            <ResponsibilityDot />
             <FontSmall>{responsibility}</FontSmall>
           </ResponsibilityItem>
         ))}

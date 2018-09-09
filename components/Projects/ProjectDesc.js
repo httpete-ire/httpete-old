@@ -45,7 +45,7 @@ export default ({ title, mainDesc, push = false, showLink }) => (
     <p>{mainDesc}</p>
     {showLink && (
       <DefaultButton
-        margin="25px 20px 20px 0"
+        margin="25px 100px 20px 0"
         href={`/projects/${title.toLowerCase()}`}
       >
         Read more

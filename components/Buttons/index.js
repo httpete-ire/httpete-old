@@ -23,13 +23,24 @@ const OutlineButton = styled('a')({
   },
 });
 
-const DefaultButton = styled('a')({
-  ...btnStyles,
-  background: '#57CC88',
-  '&:hover': {
-    background: '#3ac072',
+const DefaultButton = styled('a')(
+  {
+    ...btnStyles,
+    background: '#57CC88',
+    '&:hover': {
+      background: '#3ac072',
+    },
   },
-});
+  props => {
+    const styles = {};
+
+    if (props.margin) {
+      styles.margin = props.margin;
+    }
+
+    return styles;
+  }
+);
 
 DefaultButton.propsAreCssOverrides = true;
 

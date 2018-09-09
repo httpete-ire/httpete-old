@@ -14,6 +14,7 @@ const MainNav = styled('ul')(
     color: '#fff',
     display: 'flex',
     justifyContent: 'space-between',
+    alignItems: 'center',
     listStyle: 'none',
     padding: 0,
     [mediaQueries.small]: {
@@ -27,11 +28,13 @@ const MainNav = styled('ul')(
       styles.width = props.width;
     }
 
+    if (props.padding) {
+      styles.padding = `${props.padding} !important`;
+    }
+
     return styles;
   }
 );
-
-MainNav.propsAreCssOverrides = true;
 
 export default () => (
   <Nav>
@@ -41,7 +44,7 @@ export default () => (
       </li>
 
       <li className="main-nav__item main-nav__sub-nav">
-        <MainNav width="130px">
+        <MainNav padding="0">
           <DropdownContainer>
             <h4>Work</h4>
             <Dropdown className="dropdown">

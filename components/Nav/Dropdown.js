@@ -1,4 +1,5 @@
 import styled from 'react-emotion';
+import { mediaQueries } from './../../config';
 
 const styles = {
   position: 'absolute',
@@ -26,6 +27,10 @@ const DropdownItem = styled('li')({
 });
 
 const DropdownContainer = styled('li')({
+  marginRight: 50,
+  [mediaQueries.small]: {
+    marginRight: 25,
+  },
   ':hover .dropdown': {
     display: 'block',
   },

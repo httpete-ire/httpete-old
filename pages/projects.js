@@ -56,7 +56,7 @@ export default class ProjectsPage extends React.Component {
                 <Section marginBottom="74">
                   <Row>
                     <Col>
-                      <Browser image={project.mainImage} main />
+                      <Browser image={project.mainImage.src} main />
                     </Col>
                   </Row>
                 </Section>

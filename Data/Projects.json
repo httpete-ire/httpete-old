@@ -11,17 +11,17 @@
     "screens": [
       {
         "title": "Filters",
-        "mainImage": "/static/smartmap/filter.jpg",
+        "mainImage": { "src": "/static/smartmap/filter.jpg" },
         "mainDesc": "Lorem ipsum dolor amet vHS listicle church-key kickstarter tofu, pitchfork plaid gluten-free roof party. Scenester letterpress put a bird on it poutine gochujang."
       },
       {
         "title": "Metrics",
-        "mainImage": "/static/smartmap/metrics.jpg",
+        "mainImage": { "src": "/static/smartmap/metrics.jpg" },
         "mainDesc": "Lorem ipsum dolor amet vHS listicle church-key kickstarter tofu, pitchfork plaid gluten-free roof party. Scenester letterpress put a bird on it poutine gochujang."
       },
       {
         "title": "Beacon details",
-        "mainImage": "/static/smartmap/beacon.jpg",
+        "mainImage": { "src": "/static/smartmap/beacon.jpg" },
         "mainDesc": "Lorem ipsum dolor amet vHS listicle church-key kickstarter tofu, pitchfork plaid gluten-free roof party. Scenester letterpress put a bird on it poutine gochujang."
       }
     ]
@@ -42,12 +42,12 @@
     "screens": [
       {
         "title": "Tasks",
-        "mainImage": "/static/timedo/active-small.jpg",
+        "mainImage": { "src": "/static/timedo/active-small.jpg" },
         "mainDesc": "The task list manages a list of things a user must do within a pomodoro. When a pomodoro is complete, all completed tasks will be automatcially cleared. Allowing the user to concentrate on what to do next."
       },
       {
         "title": "Settings",
-        "mainImage": "/static/timedo/break-small.jpg",
+        "mainImage": { "src": "/static/timedo/break-small.jpg" },
         "mainDesc": "The user can set the time for the three types of timers: active, short break and long break. By enabling desktop notifactions, the browsers notifcation API will inform the user when a timer is up."
       }
     ]
@@ -67,17 +67,17 @@
     "screens": [
       {
         "title": "Pull request",
-        "mainImage": "/static/dochub/pull-request-page.jpg",
+        "mainImage": { "src": "/static/dochub/pull-request-page.jpg" },
         "mainDesc": "Readers can suggest changes without the need for an account by making a pull request. The author is notified of these changes and can either close or merge the request."
       },
       {
         "title": "Published document",
-        "mainImage": "/static/dochub/published-document.jpg",
+        "mainImage": { "src": "/static/dochub/published-document.jpg" },
         "mainDesc": "Documentation can easily be shared and viewed using a short URL. The published document is automatically updated when a change is made to the documentation."
       },
       {
         "title": "Version control",
-        "mainImage": "/static/dochub/version-control.jpg",
+        "mainImage": { "src": "/static/dochub/version-control.jpg" },
         "mainDesc": "Previous versions of documentation are stored, allowing the author to revert any mistakes. The author can select what changes to revert using the merge tool."
       }
     ]

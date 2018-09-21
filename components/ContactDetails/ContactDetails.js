@@ -29,17 +29,29 @@ const ContactLink = styled('a')({
 export default () => (
   <ContactList>
     <ContactItem>
-      <ContactLink href="mailto:pete@httpete.com" target="_blank">
+      <ContactLink
+        href="mailto:pete@httpete.com"
+        target="_blank"
+        rel="noopener"
+      >
         pete@httpete.com
       </ContactLink>
     </ContactItem>
     <ContactItem>
-      <ContactLink href="https://twitter.com/_httpete_" target="_blank">
+      <ContactLink
+        href="https://twitter.com/_httpete_"
+        target="_blank"
+        rel="noopener"
+      >
         Twitter
       </ContactLink>
     </ContactItem>
     <ContactItem>
-      <ContactLink href="https://github.com/httpete-ire" target="_blank">
+      <ContactLink
+        href="https://github.com/httpete-ire"
+        target="_blank"
+        rel="noopener"
+      >
         Github
       </ContactLink>
     </ContactItem>
@@ -47,6 +59,7 @@ export default () => (
       <ContactLink
         href="https://www.linkedin.com/in/pete-redmond-367405114/"
         target="_blank"
+        rel="noopener"
       >
         Linkedin
       </ContactLink>

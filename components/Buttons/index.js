@@ -6,7 +6,7 @@ const btnStyles = {
   padding: '12px 20px',
   textAlign: 'center',
   borderRadius: '5px',
-  color: '#fafafa',
+  color: '#000',
   [mediaQueries.small]: {
     width: '100%',
   },

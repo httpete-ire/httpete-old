@@ -44,7 +44,9 @@ export default () => (
         <Container backgroundColor="#ffffff">
           <Content>
             <Section marginBottom="74">
-              <Title inViewColor="#ddd">Profile</Title>
+              <Title inViewColor="#ddd" color="#ddd">
+                Profile
+              </Title>
               <Row>
                 <Col flex="3" marginBottom="18">
                   <Profile />

@@ -10,7 +10,6 @@ const Title = styled('h4')(
     marginTop: 10,
     marginBottom: 20,
     transition: 'all 0.5s',
-    color: '#ddd',
     borderBottom: '3px solid #ddd',
     fontSize: '1.414em',
     lineHeight: 1.2,
@@ -55,13 +54,13 @@ const TitleRow = styled('div')(
   })
 );
 
-export default ({ children, swap, inViewColor = '#333' }) => (
+export default ({ children, swap, inViewColor = '#333', color = '#000' }) => (
   <InView>
     {({ isInView }) => {
       return (
         <TitleRow swap={swap}>
           <Col textAlign={swap ? 'right' : 'left'}>
-            <Title color={isInView ? inViewColor : '#ddd'}>{children}</Title>
+            <Title color={isInView ? inViewColor : color}>{children}</Title>
           </Col>
         </TitleRow>
       );

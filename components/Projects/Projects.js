@@ -11,8 +11,9 @@ export default ({ projects, showLinks = false }) =>
           ? [
               <ProjectImage
                 key={`${project.title}-image`}
-                image={project.mainImage}
+                image={project.mainImage.src}
                 rightAligned={false}
+                alt={project.mainImage.alt}
               />,
               <ProjectDesc
                 key={`${project.title}-desc`}
@@ -32,7 +33,8 @@ export default ({ projects, showLinks = false }) =>
               />,
               <ProjectImage
                 key={`${project.title}-image`}
-                image={project.mainImage}
+                image={project.mainImage.src}
+                alt={project.mainImage.alt}
                 rightAligned={true}
               />,
             ]}

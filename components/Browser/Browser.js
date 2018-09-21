@@ -18,15 +18,15 @@ const Browser = styled('div')({
   },
 });
 
-export default ({ image, main = false }) =>
+export default ({ image, main = false, alt }) =>
   main ? (
     <MainBrowser>
       <BrowserHeader />
-      <BrowserBody image={image} />
+      <BrowserBody image={image} alt={alt} />
     </MainBrowser>
   ) : (
     <Browser>
       <BrowserHeader />
-      <BrowserBody image={image} />
+      <BrowserBody image={image} alt={alt} />
     </Browser>
   );

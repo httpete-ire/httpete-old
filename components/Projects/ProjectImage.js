@@ -1,8 +1,8 @@
 import { Col } from './../Grid';
 import Browser from './../Browser';
 
-export default ({ image, rightAligned }) => (
+export default ({ image, rightAligned, alt }) => (
   <Col browser={!rightAligned} browserSwap={rightAligned}>
-    <Browser image={image} />
+    <Browser image={image} alt={alt} />
   </Col>
 );

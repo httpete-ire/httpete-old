@@ -72,7 +72,7 @@ export default class MyDocument extends Document {
 
   render() {
     return (
-      <html>
+      <html lang="en">
         <Head>
           <style dangerouslySetInnerHTML={{ __html: this.props.css }} />
           <meta name="viewport" content="width=device-width" />
@@ -90,6 +90,7 @@ export default class MyDocument extends Document {
                       `,
             }}
           />
+          <title>httpete.com</title>
         </Head>
         <body
           className={this.state.loaded ? 'loaded' : ''}

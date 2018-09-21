@@ -10,8 +10,8 @@ const styles = {
 
 const BrowserHeader = styled('div')(styles);
 
-export default ({ image }) => (
+export default ({ image, alt }) => (
   <BrowserHeader>
-    <img src={image} />
+    <img src={image} alt={alt} />
   </BrowserHeader>
 );

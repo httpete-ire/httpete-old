@@ -37,7 +37,7 @@
     "prjectDesc": "The application allows users to manage their time using a pomodoro timer. Users can keep track of things to do using a todo list. The Pomodoro Technique is a time management method for breaking tasks into focused time blocks separated by a short break.",
     "sideDesc": "When a tab is inactive in chrome, chrome will slow down the execution of timer functions. This isnt ideal for a time tracking app. One solution I found was to use the Web Workers API which is supported in most modern browsers. As Web Workers are executed in a seperate thread, timer functions execute as normal.",
     "sourceCodeLink": "https://github.com/httpete-ire/timedo",
-    "applicationLink": "https://timedo-rhqopfwgwd.now.sh/",
+    "applicationLink": "https://timedo-uhkhtcqawd.now.sh/",
     "technologies": ["js", "react", "redux", "webpack", "sass", "babel"],
     "screens": [
       {

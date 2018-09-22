@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'react-emotion';
 
+import LazyImage from './../LazyImage/LazyImage';
+
 const styles = {
   overflow: 'hidden',
   borderRadius: '0 0 5px 5px',
@@ -18,27 +20,3 @@ export default ({ image, alt, svg }) => (
     </LazyImage>
   </BrowserHeader>
 );
-
-class LazyImage extends React.Component {
-  state = {
-    loaded: false,
-  };
-
-  componentDidMount() {
-    const img = new Image();
-    img.src = this.props.src;
-
-    img.onload = () => {
-      this.setState({
-        loaded: true,
-      });
-    };
-  }
-
-  render() {
-    const { src, svg, children } = this.props;
-    const { loaded } = this.state;
-
-    return children(!svg || loaded ? src : svg);
-  }
-}

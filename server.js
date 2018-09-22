@@ -13,7 +13,7 @@ app.prepare().then(() => {
     server.get(/^\/static\//, (_, res, nextHandler) => {
       res.setHeader(
         'Cache-Control',
-        'public, max-age=180, s-maxage=86400, immutable'
+        'public, max-age=86400, s-maxage=86400, immutable'
       );
       nextHandler();
     });

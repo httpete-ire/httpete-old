@@ -16,7 +16,7 @@ class LazyImage extends React.Component {
   }
 
   setUpLazyLoading = () => {
-    if (!'IntersectionObserver' in window) {
+    if ('IntersectionObserver' in window) {
       this.imageObserver = new IntersectionObserver(entries => {
         entries.forEach(entry => {
           if (entry.isIntersecting) {

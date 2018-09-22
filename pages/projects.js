@@ -39,7 +39,7 @@ export default class ProjectsPage extends React.Component {
     return (
       <PageViewTracking>
         <Layout>
-          <Header backgroundImage="url(/static/desk.webp)">
+          <Header backgroundImage="url(/static/desk.jpg)">
             <Container>
               <Row>
                 <Nav />

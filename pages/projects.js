@@ -39,7 +39,7 @@ export default class ProjectsPage extends React.Component {
     return (
       <PageViewTracking>
         <Layout>
-          <Header backgroundImage="url(/static/desk.jpg)">
+          <Header backgroundImage="url(/static/desk.webp)">
             <Container>
               <Row>
                 <Nav />
@@ -56,7 +56,11 @@ export default class ProjectsPage extends React.Component {
                 <Section marginBottom="74">
                   <Row>
                     <Col>
-                      <Browser image={project.mainImage.src} main />
+                      <Browser
+                        image={project.mainImage.src}
+                        svg={project.mainImage.svg}
+                        main
+                      />
                     </Col>
                   </Row>
                 </Section>

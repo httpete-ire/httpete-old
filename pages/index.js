@@ -31,7 +31,7 @@ if (typeof window !== 'undefined') {
 export default () => (
   <PageViewTracking>
     <Layout>
-      <Header backgroundImage="url(/static/desk.jpg)">
+      <Header backgroundImage="url(/static/desk.webp)">
         <Container>
           <Row>
             <Nav />

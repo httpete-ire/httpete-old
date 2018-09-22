@@ -14,6 +14,7 @@ export default ({ projects, showLinks = false }) =>
                 image={project.mainImage.src}
                 rightAligned={false}
                 alt={project.mainImage.alt}
+                svg={project.mainImage.svg}
               />,
               <ProjectDesc
                 key={`${project.title}-desc`}
@@ -35,6 +36,7 @@ export default ({ projects, showLinks = false }) =>
                 key={`${project.title}-image`}
                 image={project.mainImage.src}
                 alt={project.mainImage.alt}
+                svg={project.mainImage.svg}
                 rightAligned={true}
               />,
             ]}

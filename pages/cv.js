@@ -32,7 +32,7 @@ if (typeof window !== 'undefined') {
 export default () => (
   <PageViewTracking>
     <Layout>
-      <Header backgroundImage="url(/static/desk.webp)" height="65vh">
+      <Header backgroundImage="url(/static/desk.jpg)" height="65vh">
         <Container>
           <Row>
             <Nav />

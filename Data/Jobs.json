@@ -5,11 +5,11 @@
     "role": "Front-end community lead",
     "from": "2017",
     "to": "present",
-    "details": "As well as my current role as a Javascript engineer on the crowdfunding product I also lead the frontend community in JustGiving.",
+    "details": "JustGiving is one of the worlds largest online giving platforms. Have worked across several teams in the company working on various projects to modernise JustGiving’s front-end applications using React.\n\nAs well as my current role as a Javascript engineer on the crowdfunding product I also lead the front-end community at JustGiving.",
     "responsibilities": [
-      "mentor junior developers to help them in their careers",
-      "core contributor to the share component library that is used throughout JustGiving",
-      "manage frontend recruitment"
+      "Mentor junior developers to help them in their careers",
+      "Core contributor to the shared component library that is used throughout JustGiving products",
+      "Manage frontend recruitment to ensure candidates are both technically sound but also a culture fit at JustGiving"
     ]
   },
   {
@@ -18,11 +18,11 @@
     "role": "Javascript engineer",
     "from": "2016",
     "to": "present",
-    "details": "JustGiving is one of the worlds largest online giving platforms. Have worked across several teams in the company working on various projects to modernise JustGivings front-end applications using React.",
+    "details": "Have worked across multiple teams within JustGiving working on some of JustGiving’s core products, the fundraising and crowdfunding product.",
     "responsibilities": [
-      "part of a cross functional team tasked with rebuilding the fundraising page, JustGivings core product, using React and Redux",
-      "core member of a development team who maintain and add new functionality to Justgiving’s crowdfunding platform, a large scale React/Redux app written in TypeScript",
-      "created an analytics React component library that easily allows developers to integrate analytics tracking into React projects"
+      "Part of a cross-functional team tasked with rebuilding the fundraising page, JustGiving’s core products, using React and Redux",
+      "Core member of a development team which maintains and engineers new functionality to JustGiving’s crowdfunding platform; a large scale React/Redux app written in TypeScript",
+      "Created an analytics React component library which easily allows developers to integrate analytics tracking into React projects"
     ]
   },
   {
@@ -33,8 +33,8 @@
     "to": "September 2015",
     "details": "Four month contract in IBM's design studio as a front-end developer. Part of a team tasked with finding new ways to communicate IBM's Design Thinking. The project went on to win an IDI award for best Design Education and Industry project.",
     "responsibilities": [
-      "working with designers to rapidly build prototypes to validate concepts",
-      "working with the team to build a working prototype of the system we proposed which was eventually presented to the president and chief technical officer of IBM Design"
+      "Working with designers to rapidly build prototypes to validate concepts",
+      "Working with the team to build a working prototype of the system we proposed, which was eventually presented to the President and Chief Technical Officer of IBM Design"
     ]
   },
   {
@@ -43,11 +43,11 @@
     "role": "Web developer",
     "from": "2014",
     "to": "2015",
-    "details": "Joined a full development team for a 5 month work placement as a web developer. As a result of my performance I was offered a part time position when college resumed.",
+    "details": "Software design is a software development company based in the digital hub in Dublin. I joined them for a 5 month work placement as a web developer. As a result of my performance, I was offered a part time position while I continued my studies.",
     "responsibilities": [
-      "working as part of the development team to build commercial applications and websites",
-      "working closely with experienced designers to ensure the finished application/website met the high standards the client expected",
-      "providing client training on completion of products"
+      "Working as part of the development team to build commercial applications and websites",
+      "Working closely with UX/UI designers to ensure the finished application/website met the high standards the firm was known for",
+      "Provided client facing support/training on all finalised products"
     ]
   },
   {
@@ -56,10 +56,11 @@
     "role": "Front-end developer",
     "from": "2011",
     "to": "2014",
+    "details": "Prop Me Up is an events company based in Dublin. I joined them as a front-end developer,  building their websites and custom backend system.",
     "responsibilities": [
-      "designing, developing and maintaining fully functioning websites, several of these were integrated with the businesses custom backend systems",
-      "working with a backend developer to add new features to the website/backend system",
-      "working with an SEO expert to ensure the website ranked as high as possible organically"
+      "Design, development and maintenance of fully functioning websites. Several of these were integrated with the businesses custom backend systems",
+      "Working with backend developers to add new features to the website/backend systems",
+      "Working with an SEO expert to ensure the website ranked as high as possible organically"
     ]
   }
 ]

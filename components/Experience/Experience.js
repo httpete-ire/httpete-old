@@ -46,6 +46,7 @@ const Role = styled('h5')({
 const FontSmall = styled('p')({
   fontSize: '0.875em',
   marginBottom: '1.3em',
+  whiteSpace: 'pre-wrap',
 });
 
 const Text = styled('p')({

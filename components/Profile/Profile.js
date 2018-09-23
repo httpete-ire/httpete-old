@@ -2,8 +2,9 @@ import React from 'react';
 
 export default () => (
   <p>
-    Passionate and skilled front-end engineer with a strong background in
-    JavaScript. Over five years industry experience having worked for several
-    start ups, IBM and JustGiving where I am currently employed.
+    I am a front-end engineer with a strong focus on JavaScript. I have over
+    five years industry experience working across cross-functional teams on a
+    wide range of projects. I am also a keen learner and always looking to
+    improve through side projects.
   </p>
 );

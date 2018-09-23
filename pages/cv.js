@@ -100,6 +100,7 @@ export default () => (
                     course="Diploma in Creative Multimedia and Web/App Development"
                     from="2010"
                     to="2012"
+                    last
                   />
                 </Col>
               </Row>

@@ -77,4 +77,4 @@ const jobs = [
   }
 ]
 
-export default Jobs;
+export default jobs;
